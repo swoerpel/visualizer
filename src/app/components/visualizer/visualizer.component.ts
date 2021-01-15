@@ -19,23 +19,23 @@ export class VisualizerComponent implements OnInit{
   };
 
   private gridDims: Dims = {
-    width: 6,
-    height: 6,
+    width: 8,
+    height: 8,
   }
 
+  private tileWidth = this.canvas.width / this.gridDims.width;
+  private tileHeight = this.canvas.height / this.gridDims.height;
+
+  private colors: string[] = colorPalettes.find(p=>p.name === 'Spectral')?.colors;
+
   private grid: any[] = [];
-
-  private xScale;
-  private yScale;
-
-  private tileWidth = this.canvas.width / this.gridDims.width;;
-  private tileHeight = this.canvas.height / this.gridDims.height;;
 
   private canvasRef: any;
   private svg: any;
   private colorMachine: any;
 
-  private colors: string[] = colorPalettes.find(p=>p.name === 'Spectral')?.colors;
+  private xScale;
+  private yScale;
 
   constructor() { }
 
@@ -62,7 +62,10 @@ export class VisualizerComponent implements OnInit{
         })
         index++;
       }
-      if(i % 2 === 0){ col = col.reverse() }
+      if(i % 2 === 0){ 
+        col = col.reverse() 
+      }
+
       this.grid = [...this.grid,...col]
     }
     this.canvasRef = d3.select(".canvas")
@@ -74,7 +77,14 @@ export class VisualizerComponent implements OnInit{
     this.yScale = d3.scaleLinear().domain([0,1]).range([0,this.canvas.height])
   }
 
-  private update(grid,clickLocation = {x:0,y:0}): void{
+  private update(grid, clickLocation = {x:0,y:0}): void{
+    if(false){ 
+      let indexA = Math.floor(Math.random() * this.gridDims.width)
+      let indexB = Math.floor(Math.random() * this.gridDims.width)
+      const temp = {...grid[indexA]};
+      grid[indexA] = {...grid[indexB]};
+      grid[indexB] = temp;
+    }
     const tiles = this.svg.selectAll('rect')
       .data(grid)
 
@@ -91,7 +101,7 @@ export class VisualizerComponent implements OnInit{
       // merges enter selection and rects in the dom already
       // lines below are applied to both
       .merge(tiles) 
-      .transition().duration(200)
+      .transition().duration(1000)
         .attr('x',d=>this.xScale(d.x))
         .attr('y',d=>this.yScale(d.y))
   }
