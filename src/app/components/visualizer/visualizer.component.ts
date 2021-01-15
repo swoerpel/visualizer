@@ -1,8 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { head, last } from 'lodash';
-import { Bounds, Dims, Point } from 'src/app/models';
 
 import * as d3 from 'd3';
+import * as chroma from 'chroma.ts';
+import { colorPalettes } from 'src/app/shared/colors';
+import { Dims, Point } from 'src/app/models';
 
 @Component({
   selector: 'app-visualizer',
@@ -11,57 +13,34 @@ import * as d3 from 'd3';
 })
 export class VisualizerComponent implements OnInit{
 
-  private tileDims: Dims = {
-    width: 0.25,
-    height: 0.25
-  }
-
-  private grid: any[] = [
-    {x:0,y:0,fill:'yellow'},
-    {x:0.5,y:0,fill:'orange'},
-    {x:0.5,y:0.5,fill:'red'},
-    {x:0,y:0.5,fill:'blue'},
-  ]
-
-  private margin: Bounds = {top: 0, right: 0, bottom: 0, left: 0};
-
-  private globalDims: Dims = {
+  private canvas: Dims = {
     width: 600,
     height: 600,
   };
 
+  private gridDims: Dims = {
+    width: 6,
+    height: 6,
+  }
+
+  private grid: any[] = [];
+
   private xScale;
   private yScale;
 
-  private canvasDims: Dims;
-  private canvas: any;
+  private tileWidth = this.canvas.width / this.gridDims.width;;
+  private tileHeight = this.canvas.height / this.gridDims.height;;
+
+  private canvasRef: any;
   private svg: any;
+  private colorMachine: any;
+
+  private colors: string[] = colorPalettes.find(p=>p.name === 'Spectral')?.colors;
 
   constructor() { }
 
   ngOnInit(): void {
     this.setup()
-    this.draw()
-  }
-
-  private setup(){
-    this.margin = Object.entries(this.margin).reduce((prev:any,curr:any) => ({
-      ...prev,[head(curr)]:Math.round(last(curr)*this.globalDims.width)
-    }),{})
-    this.canvasDims = {
-      width: this.globalDims.width - this.margin.left - this.margin.right,
-      height: this.globalDims.height - this.margin.top - this.margin.bottom
-    }
-    this.canvas = d3.select(".canvas")
-    this.svg = this.canvas.append('svg')
-      .attr('width',this.canvasDims.width)
-      .attr('height',this.canvasDims.height)
-      .style('background-color','white');
-    this.xScale = d3.scaleLinear().domain([0,1]).range([0,this.canvasDims.width])
-    this.yScale = d3.scaleLinear().domain([0,1]).range([0,this.canvasDims.height])
-  }
-
-  private draw(): void{
     this.update(this.grid);
     this.svg.on('click',({offsetX,offsetY})=>{
       let clickLocation: Point = {x:offsetX,y:offsetY};
@@ -70,24 +49,51 @@ export class VisualizerComponent implements OnInit{
     });
   }
 
+  private setup(){
+    this.colorMachine = chroma.scale(this.colors)
+    let index = 0;
+    for(let i = 0; i < this.gridDims.width; i++){
+      let col = []
+      for(let j = 0; j < this.gridDims.height; j++){
+        col.push({
+          x: i / this.gridDims.width,
+          y: j / this.gridDims.height,
+          fill: this.colorMachine((index % this.gridDims.width) /this.gridDims.width),
+        })
+        index++;
+      }
+      if(i % 2 === 0){ col = col.reverse() }
+      this.grid = [...this.grid,...col]
+    }
+    this.canvasRef = d3.select(".canvas")
+    this.svg = this.canvasRef.append('svg')
+      .attr('width',this.canvas.width)
+      .attr('height',this.canvas.height)
+      .style('background-color','white');
+    this.xScale = d3.scaleLinear().domain([0,1]).range([0,this.canvas.width])
+    this.yScale = d3.scaleLinear().domain([0,1]).range([0,this.canvas.height])
+  }
+
   private update(grid,clickLocation = {x:0,y:0}): void{
     const tiles = this.svg.selectAll('rect')
       .data(grid)
 
     tiles.exit().remove();
 
-    tiles.attr("width",this.xScale(this.tileDims.width))
-      .attr("height",this.yScale(this.tileDims.height))
+    tiles.attr("width",this.tileWidth)
+      .attr("height",this.tileHeight)
 
     tiles.enter()
       .append('rect')
-      .attr("width",this.xScale(this.tileDims.width))
-      .attr("height",this.yScale(this.tileDims.height))
+      .attr("width",this.tileWidth)
+      .attr("height",this.tileHeight)
       .attr('fill',d=>d.fill)
-      .merge(tiles)
+      // merges enter selection and rects in the dom already
+      // lines below are applied to both
+      .merge(tiles) 
       .transition().duration(200)
-        .attr('x',d=>this.xScale(d.x + this.tileDims.width / 2))
-        .attr('y',d=>this.yScale(d.y + this.tileDims.height / 2))
+        .attr('x',d=>this.xScale(d.x))
+        .attr('y',d=>this.yScale(d.y))
   }
 
 }

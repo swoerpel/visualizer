@@ -15,8 +15,3 @@ export interface Bounds{
     right: number;
 }
 
-export interface ColorPalette{
-    id: string;
-    name?: string;
-    colors: string[];
-}
