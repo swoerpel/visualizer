@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { VisualizerComponent } from './components/visualizer/visualizer.component';
 import { SandboxComponent } from './components/sandbox/sandbox.component';
+import { CourseComponent } from './components/course/course.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     VisualizerComponent,
-    SandboxComponent
+    SandboxComponent,
+    CourseComponent
   ],
   imports: [
     BrowserModule,
