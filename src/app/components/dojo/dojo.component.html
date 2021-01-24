@@ -1,0 +1,41 @@
+<div class="title">- The Dojo -</div>
+
+<div class="graph container">
+    <div class="graph graph__buttons">
+        <button (click)="selectActivity(Activity.Cycling)" 
+                data-activity="cycling"
+                [ngClass]="selectedActivity === Activity.Cycling ? 'selected' : '' ">
+            cycling
+        </button>
+        <button (click)="selectActivity(Activity.Running)" 
+                data-activity="running"
+                [ngClass]="selectedActivity === Activity.Running ? 'selected' : '' ">
+            running
+        </button>
+        <button (click)="selectActivity(Activity.Swimming)" 
+                data-activity="swimming"
+                [ngClass]="selectedActivity === Activity.Swimming ? 'selected' : '' ">
+            swimming
+        </button>
+        <button (click)="selectActivity(Activity.Walking)" 
+                data-activity="walking"
+                [ngClass]="selectedActivity === Activity.Walking ? 'selected' : '' ">
+            walking
+        </button>
+    </div>
+    <div class="graph graph__display">
+        <div class="canvas"></div>
+    </div>
+</div>
+
+<div class="footer">
+    <div class="footer footer__text">
+        How much {{Activity[selectedActivity]}} have you done today?
+        <input class="footer-input" placeholder="Distance in m" />
+    </div>
+    <div class="footer footer__buttons">
+        <button (click)="activityService.updateData()">Update</button>
+        <button (click)="activityService.deleteData()">Delete</button>
+        <button (click)="activityService.addData()">Add</button>
+    </div>
+</div>

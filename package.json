@@ -19,10 +19,13 @@
     "@angular/platform-browser": "~9.1.13",
     "@angular/platform-browser-dynamic": "~9.1.13",
     "@angular/router": "~9.1.13",
+    "@tonejs/midi": "^2.0.25",
     "chroma": "0.0.1",
     "chroma.ts": "^1.0.10",
     "d3": "^6.3.1",
     "rxjs": "~6.5.4",
+    "textures": "^1.2.2",
+    "tone": "^14.7.77",
     "tslib": "^1.10.0",
     "zone.js": "~0.10.2"
   },

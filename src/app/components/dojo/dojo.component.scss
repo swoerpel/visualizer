@@ -1,0 +1,135 @@
+$primary: rgb(63, 231, 63);
+$primary-light: rgb(137, 235, 137);
+
+$dark: black;
+$medium1: rgb(43, 43, 43);
+$medium2: rgb(88, 88, 88);
+$light: rgb(211, 211, 211);
+
+:host{
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    background-color: $medium2;
+}
+
+.title{
+    font-size: 4rem;
+    font-weight: 200;
+    font-family: 'Courier New', Courier, monospace;
+    color: $light;
+}
+
+.container{
+    margin: 4rem 0;
+}
+
+.graph{
+    
+    background-color: $medium1;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+
+    &__buttons{
+        flex: 1;
+        flex-direction: column;
+    }
+
+    &__display{
+        flex: 2;
+        flex-direction: column;
+        align-items:center;
+    }
+}
+
+button{
+    margin: 0.5rem 1rem;
+    padding: 0.5rem 1rem;
+    font-size: 1.5rem;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    color: black;
+    background-color: white;
+    &:hover{
+        cursor: pointer;
+        background-color: rgb(194, 194, 194);
+    }
+    &:active{
+        cursor: pointer;
+        transform: translate(0,2px)
+    }
+}
+
+input{
+    padding: 0.5rem 1rem;
+    font-size: 1.5rem;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+
+
+
+.footer-input{
+    margin: 0.5rem 0;
+}
+
+.footer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    font-weight: 200;
+    font-family: 'Courier New', Courier, monospace;
+    color: $light;
+    font-size: 1.5rem;
+    // margin: 1.5rem 0;
+
+    &__text{
+        flex: 2;
+        // padding: 0.5rem 0;
+        margin: 0.5rem 0;
+        flex-direction: column;
+    }
+
+
+
+    &__buttons{
+        flex: 1;
+        flex-direction: row;
+        justify-content: center;
+
+        & > button{
+            flex: 1;
+            margin: 0.25rem 0.5rem;
+            padding: 0.25rem 0.5rem;
+        }
+    }
+}
+
+.selected{
+    background-color:$primary;
+    color: $medium1;
+    &:hover{
+        background-color: $primary-light;
+    }
+}
+
+::ng-deep.x-axis path,
+::ng-deep.x-axis line,
+::ng-deep.y-axis path, 
+::ng-deep.y-axis line {
+    stroke:$light;
+}
+
+::ng-deep.x-axis text,
+::ng-deep.y-axis text{
+    color: $light;
+    font-size: 1rem;
+}

@@ -1,0 +1,1594 @@
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["main"],{
+
+/***/ "./$$_lazy_route_resource lazy recursive":
+/*!******************************************************!*\
+  !*** ./$$_lazy_route_resource lazy namespace object ***!
+  \******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./$$_lazy_route_resource lazy recursive";
+
+/***/ }),
+
+/***/ "./node_modules/webpack/hot sync ^\\.\\/log$":
+/*!*************************************************!*\
+  !*** (webpack)/hot sync nonrecursive ^\.\/log$ ***!
+  \*************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var map = {
+	"./log": "./node_modules/webpack/hot/log.js"
+};
+
+
+function webpackContext(req) {
+	var id = webpackContextResolve(req);
+	return __webpack_require__(id);
+}
+function webpackContextResolve(req) {
+	if(!__webpack_require__.o(map, req)) {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	}
+	return map[req];
+}
+webpackContext.keys = function webpackContextKeys() {
+	return Object.keys(map);
+};
+webpackContext.resolve = webpackContextResolve;
+module.exports = webpackContext;
+webpackContext.id = "./node_modules/webpack/hot sync ^\\.\\/log$";
+
+/***/ }),
+
+/***/ "./src/app/app-routing.module.ts":
+/*!***************************************!*\
+  !*** ./src/app/app-routing.module.ts ***!
+  \***************************************/
+/*! exports provided: AppRoutingModule */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AppRoutingModule", function() { return AppRoutingModule; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/__ivy_ngcc__/fesm2015/router.js");
+
+
+
+
+const routes = [];
+class AppRoutingModule {
+}
+AppRoutingModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineNgModule"]({ type: AppRoutingModule });
+AppRoutingModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjector"]({ factory: function AppRoutingModule_Factory(t) { return new (t || AppRoutingModule)(); }, imports: [[_angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"].forRoot(routes)],
+        _angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"]] });
+(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵsetNgModuleScope"](AppRoutingModule, { imports: [_angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"]], exports: [_angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"]] }); })();
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](AppRoutingModule, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["NgModule"],
+        args: [{
+                imports: [_angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"].forRoot(routes)],
+                exports: [_angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"]]
+            }]
+    }], null, null); })();
+
+
+/***/ }),
+
+/***/ "./src/app/app.component.ts":
+/*!**********************************!*\
+  !*** ./src/app/app.component.ts ***!
+  \**********************************/
+/*! exports provided: AppComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AppComponent", function() { return AppComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
+/* harmony import */ var _components_rings_rings_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/rings/rings.component */ "./src/app/components/rings/rings.component.ts");
+
+
+
+class AppComponent {
+    constructor() {
+        this.title = 'visualizer';
+    }
+}
+AppComponent.ɵfac = function AppComponent_Factory(t) { return new (t || AppComponent)(); };
+AppComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: AppComponent, selectors: [["app-root"]], decls: 1, vars: 0, template: function AppComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "app-rings");
+    } }, directives: [_components_rings_rings_component__WEBPACK_IMPORTED_MODULE_1__["RingsComponent"]], styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2FwcC5jb21wb25lbnQuc2NzcyJ9 */"] });
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](AppComponent, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
+        args: [{
+                selector: 'app-root',
+                templateUrl: './app.component.html',
+                styleUrls: ['./app.component.scss']
+            }]
+    }], null, null); })();
+
+
+/***/ }),
+
+/***/ "./src/app/app.module.ts":
+/*!*******************************!*\
+  !*** ./src/app/app.module.ts ***!
+  \*******************************/
+/*! exports provided: AppModule */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AppModule", function() { return AppModule; });
+/* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/platform-browser */ "./node_modules/@angular/platform-browser/__ivy_ngcc__/fesm2015/platform-browser.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
+/* harmony import */ var _app_routing_module__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./app-routing.module */ "./src/app/app-routing.module.ts");
+/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
+/* harmony import */ var _components_visualizer_visualizer_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/visualizer/visualizer.component */ "./src/app/components/visualizer/visualizer.component.ts");
+/* harmony import */ var _components_sandbox_sandbox_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/sandbox/sandbox.component */ "./src/app/components/sandbox/sandbox.component.ts");
+/* harmony import */ var _components_course_course_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/course/course.component */ "./src/app/components/course/course.component.ts");
+/* harmony import */ var _components_dojo_dojo_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./components/dojo/dojo.component */ "./src/app/components/dojo/dojo.component.ts");
+/* harmony import */ var _components_tree_tree_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./components/tree/tree.component */ "./src/app/components/tree/tree.component.ts");
+/* harmony import */ var _components_slash_slash_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./components/slash/slash.component */ "./src/app/components/slash/slash.component.ts");
+/* harmony import */ var _components_rings_rings_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./components/rings/rings.component */ "./src/app/components/rings/rings.component.ts");
+
+
+
+
+
+
+
+
+
+
+
+
+class AppModule {
+}
+AppModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineNgModule"]({ type: AppModule, bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"]] });
+AppModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjector"]({ factory: function AppModule_Factory(t) { return new (t || AppModule)(); }, providers: [], imports: [[
+            _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
+            _app_routing_module__WEBPACK_IMPORTED_MODULE_2__["AppRoutingModule"]
+        ]] });
+(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵsetNgModuleScope"](AppModule, { declarations: [_app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"],
+        _components_visualizer_visualizer_component__WEBPACK_IMPORTED_MODULE_4__["VisualizerComponent"],
+        _components_sandbox_sandbox_component__WEBPACK_IMPORTED_MODULE_5__["SandboxComponent"],
+        _components_course_course_component__WEBPACK_IMPORTED_MODULE_6__["CourseComponent"],
+        _components_dojo_dojo_component__WEBPACK_IMPORTED_MODULE_7__["DojoComponent"],
+        _components_tree_tree_component__WEBPACK_IMPORTED_MODULE_8__["TreeComponent"],
+        _components_slash_slash_component__WEBPACK_IMPORTED_MODULE_9__["SlashComponent"],
+        _components_rings_rings_component__WEBPACK_IMPORTED_MODULE_10__["RingsComponent"]], imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
+        _app_routing_module__WEBPACK_IMPORTED_MODULE_2__["AppRoutingModule"]] }); })();
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵsetClassMetadata"](AppModule, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"],
+        args: [{
+                declarations: [
+                    _app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"],
+                    _components_visualizer_visualizer_component__WEBPACK_IMPORTED_MODULE_4__["VisualizerComponent"],
+                    _components_sandbox_sandbox_component__WEBPACK_IMPORTED_MODULE_5__["SandboxComponent"],
+                    _components_course_course_component__WEBPACK_IMPORTED_MODULE_6__["CourseComponent"],
+                    _components_dojo_dojo_component__WEBPACK_IMPORTED_MODULE_7__["DojoComponent"],
+                    _components_tree_tree_component__WEBPACK_IMPORTED_MODULE_8__["TreeComponent"],
+                    _components_slash_slash_component__WEBPACK_IMPORTED_MODULE_9__["SlashComponent"],
+                    _components_rings_rings_component__WEBPACK_IMPORTED_MODULE_10__["RingsComponent"]
+                ],
+                imports: [
+                    _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
+                    _app_routing_module__WEBPACK_IMPORTED_MODULE_2__["AppRoutingModule"]
+                ],
+                providers: [],
+                bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"]]
+            }]
+    }], null, null); })();
+
+
+/***/ }),
+
+/***/ "./src/app/components/course/course.component.ts":
+/*!*******************************************************!*\
+  !*** ./src/app/components/course/course.component.ts ***!
+  \*******************************************************/
+/*! exports provided: CourseComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CourseComponent", function() { return CourseComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
+/* harmony import */ var src_app_shared_colors__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! src/app/shared/colors */ "./src/app/shared/colors.ts");
+/* harmony import */ var d3__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! d3 */ "./node_modules/d3/index.js");
+/* harmony import */ var chroma_ts__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! chroma.ts */ "./node_modules/chroma.ts/dist/index.es.js");
+/* harmony import */ var tone__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! tone */ "./node_modules/tone/build/esm/index.js");
+/* harmony import */ var src_app_shared_helpers__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! src/app/shared/helpers */ "./src/app/shared/helpers.ts");
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! rxjs */ "./node_modules/rxjs/_esm2015/index.js");
+/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! rxjs/operators */ "./node_modules/rxjs/_esm2015/operators/index.js");
+/* harmony import */ var src_app_midi_service__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! src/app/midi.service */ "./src/app/midi.service.ts");
+
+
+
+
+
+
+
+
+
+
+class CourseComponent {
+    constructor(midiService) {
+        var _a;
+        this.midiService = midiService;
+        this.update$ = new rxjs__WEBPACK_IMPORTED_MODULE_6__["Subject"]();
+        this.data = [
+        // {id: makeid(), points: 300, fillColor: '#FFFFFF'},
+        // {id: makeid(), points: 200, fillColor: '#FFFFFF'},
+        // {id: makeid(),points: 500, fillColor: '#FFFFFF'},
+        // {id: makeid(),  points: 150, fillColor: '#FFFFFF'},
+        // {id: makeid(),  points: 150, fillColor: '#FFFFFF'},
+        // {id: makeid(),  points: 150, fillColor: '#FFFFFF'},
+        // {id: makeid(),  points: 150, fillColor: '#FFFFFF'},
+        // {id: makeid(),  points: 150, fillColor: '#FFFFFF'},
+        // {id: makeid(),  points: 150, fillColor: '#FFFFFF'},
+        ];
+        this.canvas = {
+            width: 600,
+            height: 600,
+        };
+        this.rScale = d3__WEBPACK_IMPORTED_MODULE_2__["scaleLinear"]().domain([0, 1]).range([0, this.canvas.width / 2]);
+        this.xScale = d3__WEBPACK_IMPORTED_MODULE_2__["scaleLinear"]().domain([0, 1]).range([0, this.canvas.width]);
+        this.yScale = d3__WEBPACK_IMPORTED_MODULE_2__["scaleLinear"]().domain([0, 1]).range([0, this.canvas.height]);
+        this.colors = (_a = src_app_shared_colors__WEBPACK_IMPORTED_MODULE_1__["colorPalettes"].find(p => p.name === 'Spectral')) === null || _a === void 0 ? void 0 : _a.colors;
+        this.colorMachine = chroma_ts__WEBPACK_IMPORTED_MODULE_3__["scale"](this.colors);
+        this.center = {
+            x: this.xScale(0.5),
+            y: this.yScale(0.5),
+        };
+        this.arcPath = d3__WEBPACK_IMPORTED_MODULE_2__["arc"]()
+            .innerRadius(this.rScale(0.25))
+            .outerRadius(this.rScale(0.75));
+        this.pie = d3__WEBPACK_IMPORTED_MODULE_2__["pie"]().sort(null).value((d) => d.points);
+        this.prevValues = [];
+    }
+    ngOnInit() {
+        this.setup();
+        this.update(this.data);
+        this.update$.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_7__["tap"])((id) => {
+            this.data = this.data.filter(d => d.id !== id);
+            this.update(this.data);
+        })).subscribe();
+        // this.svg.on('click',({offsetX,offsetY})=>{
+        // d3.interval(()=>{
+        // this.data.pop()
+        // this.data[0].points += 100
+        // this.update(this.data);
+        // },1000)
+        // });
+    }
+    startAudio() {
+        this.midiService.loadMidi().pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_7__["first"])(), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_7__["map"])((midi) => midi.tracks[0].notes), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_7__["map"])((notes) => {
+            let startTime = notes[0].time;
+            notes = notes.map((n) => ({
+                time: n.time - startTime,
+                note: n.name,
+                velocity: n.velocity
+            }));
+            const synth = new tone__WEBPACK_IMPORTED_MODULE_4__["Synth"]().toDestination();
+            const part = new tone__WEBPACK_IMPORTED_MODULE_4__["Part"](((time, value) => {
+                synth.triggerAttackRelease(value.note, "8n", time, value.velocity);
+                this.data.push({ id: Object(src_app_shared_helpers__WEBPACK_IMPORTED_MODULE_5__["makeid"])(), points: value.time, fillColor: this.colorMachine(Math.random()).hex() });
+                this.update(this.data);
+                // if(this.data.length > 5){
+                // this.data.shift()
+                // }
+            }), notes);
+            part.start(0);
+            tone__WEBPACK_IMPORTED_MODULE_4__["Transport"].start();
+        })).subscribe();
+    }
+    setup() {
+        this.canvasRef = d3__WEBPACK_IMPORTED_MODULE_2__["select"](".canvas");
+        this.svg = this.canvasRef.append('svg')
+            .attr('width', this.canvas.width)
+            .attr('height', this.canvas.height)
+            .style('background-color', 'black');
+        this.group = this.svg.append('g')
+            .attr('transform', `translate(${this.center.x},${this.center.y})`);
+    }
+    update(data) {
+        // data = data.map((d,i)=>({...d,fillColor: this.colorMachine(i/(data.length - 1)).hex()}))
+        const paths = this.group.selectAll('path')
+            .data(this.pie(data));
+        paths.exit()
+            .transition().duration(0)
+            .attrTween('d', d => this.arcTweenExit(d, this.arcPath))
+            .remove();
+        paths.attr('d', this.arcPath)
+            .transition().duration(0)
+            .attrTween('d', (d, i) => this.arcTweenUpdate(d, i, this.arcPath));
+        paths.enter()
+            .append('path')
+            .attr('fill', d => d.data.fillColor)
+            .attr('stroke', 'white')
+            .attr('stroke-width', 10)
+            .each((d, i) => this.updatePreviousValues(d, i, data))
+            .transition().duration(0)
+            .attrTween('d', d => this.arcTweenEnter(d, this.arcPath));
+        this.group.selectAll('path')
+            .on('mouseover', (mouseEvent, d) => {
+            d3__WEBPACK_IMPORTED_MODULE_2__["select"](mouseEvent.target)
+                // named transition here prevent conflicts
+                // with other transitions on the same element
+                .transition('changeSliceFill').duration(100)
+                .attr('fill', 'white');
+            // .attr('stroke','white');
+        })
+            .on('mouseout', (mouseEvent, d) => {
+            d3__WEBPACK_IMPORTED_MODULE_2__["select"](mouseEvent.target)
+                .transition('changeSliceFill').duration(100)
+                .attr('fill', d.data.fillColor);
+            // .attr('stroke','black');
+        })
+            .on('click', (mouseEvent, d) => {
+            this.update$.next(d.data.id);
+        });
+    }
+    updatePreviousValues(d, i, data) {
+        if (this.prevValues.length < data.length) {
+            this.prevValues.push(d);
+        }
+        else {
+            this.prevValues[i] = d;
+        }
+    }
+    arcTweenEnter(d, arcPath) {
+        const interpolate = d3__WEBPACK_IMPORTED_MODULE_2__["interpolate"](d.endAngle, d.startAngle);
+        return function (t) {
+            d.startAngle = interpolate(t);
+            return arcPath(d);
+        };
+    }
+    arcTweenExit(d, arcPath) {
+        const interpolate = d3__WEBPACK_IMPORTED_MODULE_2__["interpolate"](d.startAngle, d.endAngle);
+        return function (t) {
+            d.startAngle = interpolate(t);
+            return arcPath(d);
+        };
+    }
+    arcTweenUpdate(d, i, arcPath) {
+        // interpolate between two objects
+        const interpolate = d3__WEBPACK_IMPORTED_MODULE_2__["interpolate"](this.prevValues[i], d);
+        this.prevValues[i] = interpolate(1);
+        return function (t) {
+            return arcPath(interpolate(t));
+        };
+    }
+}
+CourseComponent.ɵfac = function CourseComponent_Factory(t) { return new (t || CourseComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](src_app_midi_service__WEBPACK_IMPORTED_MODULE_8__["MidiService"])); };
+CourseComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: CourseComponent, selectors: [["app-course"]], decls: 3, vars: 0, consts: [[1, "canvas"], [3, "click"]], template: function CourseComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "div", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "button", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function CourseComponent_Template_button_click_1_listener() { return ctx.startAudio(); });
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2, "start");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    } }, styles: ["[_nghost-%COMP%] {\n  height: 100%;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9jb3Vyc2UvQzpcXEZpbGVzXFxQcm9ncmFtbWluZ1xcYXJ0XFx2aXN1YWxpemVyL3NyY1xcYXBwXFxjb21wb25lbnRzXFxjb3Vyc2VcXGNvdXJzZS5jb21wb25lbnQuc2NzcyIsInNyYy9hcHAvY29tcG9uZW50cy9jb3Vyc2UvY291cnNlLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0ksWUFBQTtFQUNBLGFBQUE7RUFDQSx1QkFBQTtFQUNBLG1CQUFBO0FDQ0oiLCJmaWxlIjoic3JjL2FwcC9jb21wb25lbnRzL2NvdXJzZS9jb3Vyc2UuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyI6aG9zdHtcclxuICAgIGhlaWdodDogMTAwJTtcclxuICAgIGRpc3BsYXk6IGZsZXg7XHJcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcclxuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XHJcbn1cclxuIiwiOmhvc3Qge1xuICBoZWlnaHQ6IDEwMCU7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICBhbGlnbi1pdGVtczogY2VudGVyO1xufSJdfQ== */"] });
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](CourseComponent, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
+        args: [{
+                selector: 'app-course',
+                templateUrl: './course.component.html',
+                styleUrls: ['./course.component.scss']
+            }]
+    }], function () { return [{ type: src_app_midi_service__WEBPACK_IMPORTED_MODULE_8__["MidiService"] }]; }, null); })();
+
+
+/***/ }),
+
+/***/ "./src/app/components/dojo/dojo.component.ts":
+/*!***************************************************!*\
+  !*** ./src/app/components/dojo/dojo.component.ts ***!
+  \***************************************************/
+/*! exports provided: DojoComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DojoComponent", function() { return DojoComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
+/* harmony import */ var d3__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! d3 */ "./node_modules/d3/index.js");
+/* harmony import */ var src_app_shared_activity_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! src/app/shared/activity.service */ "./src/app/shared/activity.service.ts");
+/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! rxjs/operators */ "./node_modules/rxjs/_esm2015/operators/index.js");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/__ivy_ngcc__/fesm2015/common.js");
+
+
+
+
+
+
+
+class DojoComponent {
+    constructor(activityService) {
+        this.activityService = activityService;
+        this.Activity = src_app_shared_activity_service__WEBPACK_IMPORTED_MODULE_2__["Activity"];
+        this.selectedActivity = src_app_shared_activity_service__WEBPACK_IMPORTED_MODULE_2__["Activity"].Cycling;
+        this.margin = { top: 40, right: 20, bottom: 50, left: 100 };
+        this.canvas = {
+            width: 660 - this.margin.left - this.margin.right,
+            height: 480 - this.margin.top - this.margin.bottom,
+        };
+        this.colors = [
+            'coral',
+            'gold',
+            'lightblue',
+            'lightgreen',
+        ];
+    }
+    ngOnInit() {
+        this.setup();
+        this.activityService.updateData$.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["tap"])(() => {
+            const data = this.activityService.getActivityData(this.selectedActivity);
+            this.update(data);
+        })).subscribe();
+        this.activityService.updateData$.next();
+    }
+    setup() {
+        this.svg = d3__WEBPACK_IMPORTED_MODULE_1__["select"]('.canvas')
+            .append("svg")
+            .attr('width', this.canvas.width + this.margin.left + this.margin.right)
+            .attr('height', this.canvas.height + this.margin.top + this.margin.bottom);
+        this.graph = this.svg.append('g')
+            .attr('width', this.canvas.width)
+            .attr('height', this.canvas.height)
+            .attr('transform', `translate(${this.margin.left},${this.margin.top})`);
+        // domains are data dependant
+        this.xScale = d3__WEBPACK_IMPORTED_MODULE_1__["scaleTime"]().range([0, this.canvas.width]);
+        this.yScale = d3__WEBPACK_IMPORTED_MODULE_1__["scaleLinear"]().range([this.canvas.height, 0]);
+        this.xAxisGroup = this.graph.append('g')
+            .attr('class', 'x-axis')
+            .attr('transform', `translate(${0},${this.canvas.height})`);
+        this.yAxisGroup = this.graph.append('g')
+            .attr('class', 'y-axis');
+        this.lineGenerator = d3__WEBPACK_IMPORTED_MODULE_1__["line"]()
+            .x((d) => this.xScale(new Date(d.date)))
+            .y((d) => this.yScale(d.distance));
+        this.path = this.graph.append('path');
+        // this.colorScale = d3.scaleOrdinal(Object.keys(Activity),this.colors)
+    }
+    update(data) {
+        data.sort((a, b) => new Date(a.date).valueOf() - new Date(b.date).valueOf());
+        const dateExtrema = d3__WEBPACK_IMPORTED_MODULE_1__["extent"](data, d => new Date(d.date));
+        this.xScale.domain(dateExtrema);
+        const distanceExtrema = [0, d3__WEBPACK_IMPORTED_MODULE_1__["max"](data, d => d.distance)];
+        this.yScale.domain(distanceExtrema);
+        this.path.data([data])
+            .attr('fill', 'none')
+            .attr('stroke', '#00bfa5')
+            .attr('stroke-width', 2)
+            .attr('d', this.lineGenerator);
+        // create circles for data objects
+        const circles = this.graph.selectAll('circle')
+            .data(data);
+        circles.exit().remove();
+        circles
+            .attr('cx', d => this.xScale(new Date(d.date)))
+            .attr('cy', d => this.yScale(d.distance));
+        // add new points
+        circles.enter()
+            .append('circle')
+            .attr('r', 4)
+            .attr('fill', '#ccc')
+            // .merge(circles)
+            .attr('cx', d => this.xScale(new Date(d.date)))
+            .attr('cy', d => this.yScale(d.distance));
+        // create axis
+        const xAxis = d3__WEBPACK_IMPORTED_MODULE_1__["axisBottom"](this.xScale)
+            .ticks(4)
+            .tickFormat(d3__WEBPACK_IMPORTED_MODULE_1__["timeFormat"]('%b %d'));
+        const yAxis = d3__WEBPACK_IMPORTED_MODULE_1__["axisLeft"](this.yScale)
+            .ticks(4)
+            .tickFormat(d => `${d} m`);
+        // call creates shapes based on AXIS
+        this.xAxisGroup.call(xAxis);
+        this.yAxisGroup.call(yAxis);
+        // rotate axis text
+        this.xAxisGroup.selectAll('text')
+            .attr('transform', 'rotate(-40)')
+            .attr('text-anchor', 'end');
+        const lineGroup = this.graph.append('g');
+        const xDottedLine = lineGroup.append('line')
+            .attr('stroke', '#ccc')
+            .attr('stroke-dasharray', 4)
+            .attr('stroke-width', 1);
+        const yDottedLine = lineGroup.append('line')
+            .attr('stroke', '#ccc')
+            .attr('stroke-dasharray', 4)
+            .attr('stroke-width', 1);
+        this.graph.selectAll('circle')
+            .on('mouseover', (mouseEvent, d) => {
+            d3__WEBPACK_IMPORTED_MODULE_1__["select"](mouseEvent.target)
+                .transition().duration(50)
+                .attr('r', 8)
+                .attr('stroke', 'white');
+            lineGroup.attr('opacity', 0.5);
+            xDottedLine
+                .attr('x1', this.xScale(new Date(d.date)))
+                .attr('x2', this.xScale(new Date(d.date)))
+                .attr('y1', this.canvas.height)
+                .attr('y2', this.yScale(d.distance));
+            yDottedLine
+                .attr('x1', 0)
+                .attr('x2', this.xScale(new Date(d.date)))
+                .attr('y1', this.yScale(d.distance))
+                .attr('y2', this.yScale(d.distance));
+        })
+            .on('mouseleave', (mouseEvent, d) => {
+            d3__WEBPACK_IMPORTED_MODULE_1__["select"](mouseEvent.target)
+                .transition().duration(50)
+                .attr('r', 4)
+                .attr('stroke', '#ccc');
+            lineGroup.attr('opacity', 0);
+        });
+    }
+    selectActivity(activity) {
+        this.selectedActivity = activity;
+        this.activityService.updateData$.next();
+    }
+}
+DojoComponent.ɵfac = function DojoComponent_Factory(t) { return new (t || DojoComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](src_app_shared_activity_service__WEBPACK_IMPORTED_MODULE_2__["ActivityService"])); };
+DojoComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: DojoComponent, selectors: [["app-dojo"]], decls: 25, vars: 5, consts: [[1, "title"], [1, "graph", "container"], [1, "graph", "graph__buttons"], ["data-activity", "cycling", 3, "ngClass", "click"], ["data-activity", "running", 3, "ngClass", "click"], ["data-activity", "swimming", 3, "ngClass", "click"], ["data-activity", "walking", 3, "ngClass", "click"], [1, "graph", "graph__display"], [1, "canvas"], [1, "footer"], [1, "footer", "footer__text"], ["placeholder", "Distance in m", 1, "footer-input"], [1, "footer", "footer__buttons"], [3, "click"]], template: function DojoComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, "- The Dojo -");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "div", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "div", 2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](4, "button", 3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function DojoComponent_Template_button_click_4_listener() { return ctx.selectActivity(ctx.Activity.Cycling); });
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](5, " cycling ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](6, "button", 4);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function DojoComponent_Template_button_click_6_listener() { return ctx.selectActivity(ctx.Activity.Running); });
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](7, " running ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](8, "button", 5);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function DojoComponent_Template_button_click_8_listener() { return ctx.selectActivity(ctx.Activity.Swimming); });
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](9, " swimming ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](10, "button", 6);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function DojoComponent_Template_button_click_10_listener() { return ctx.selectActivity(ctx.Activity.Walking); });
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](11, " walking ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](12, "div", 7);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](13, "div", 8);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](14, "div", 9);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](15, "div", 10);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](16);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](17, "input", 11);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](18, "div", 12);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](19, "button", 13);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function DojoComponent_Template_button_click_19_listener() { return ctx.activityService.updateData(); });
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](20, "Update");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](21, "button", 13);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function DojoComponent_Template_button_click_21_listener() { return ctx.activityService.deleteData(); });
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](22, "Delete");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](23, "button", 13);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function DojoComponent_Template_button_click_23_listener() { return ctx.activityService.addData(); });
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](24, "Add");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    } if (rf & 2) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](4);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngClass", ctx.selectedActivity === ctx.Activity.Cycling ? "selected" : "");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngClass", ctx.selectedActivity === ctx.Activity.Running ? "selected" : "");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngClass", ctx.selectedActivity === ctx.Activity.Swimming ? "selected" : "");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngClass", ctx.selectedActivity === ctx.Activity.Walking ? "selected" : "");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](6);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" How much ", ctx.Activity[ctx.selectedActivity], " have you done today? ");
+    } }, directives: [_angular_common__WEBPACK_IMPORTED_MODULE_4__["NgClass"]], styles: ["[_nghost-%COMP%] {\n  height: 100%;\n  display: flex;\n  justify-content: flex-start;\n  align-items: center;\n  flex-direction: column;\n  background-color: #585858;\n}\n\n.title[_ngcontent-%COMP%] {\n  font-size: 4rem;\n  font-weight: 200;\n  font-family: \"Courier New\", Courier, monospace;\n  color: lightgray;\n}\n\n.container[_ngcontent-%COMP%] {\n  margin: 4rem 0;\n}\n\n.graph[_ngcontent-%COMP%] {\n  background-color: #2b2b2b;\n  width: 100%;\n  height: 100%;\n  display: flex;\n  justify-content: center;\n}\n\n.graph__buttons[_ngcontent-%COMP%] {\n  flex: 1;\n  flex-direction: column;\n}\n\n.graph__display[_ngcontent-%COMP%] {\n  flex: 2;\n  flex-direction: column;\n  align-items: center;\n}\n\nbutton[_ngcontent-%COMP%] {\n  margin: 0.5rem 1rem;\n  padding: 0.5rem 1rem;\n  font-size: 1.5rem;\n  text-decoration: none;\n  outline: none;\n  border: none;\n  border-radius: 5px;\n  color: black;\n  background-color: white;\n}\n\nbutton[_ngcontent-%COMP%]:hover {\n  cursor: pointer;\n  background-color: #c2c2c2;\n}\n\nbutton[_ngcontent-%COMP%]:active {\n  cursor: pointer;\n  transform: translate(0, 2px);\n}\n\ninput[_ngcontent-%COMP%] {\n  padding: 0.5rem 1rem;\n  font-size: 1.5rem;\n  text-decoration: none;\n  outline: none;\n  border: none;\n  border-radius: 5px;\n}\n\n.footer-input[_ngcontent-%COMP%] {\n  margin: 0.5rem 0;\n}\n\n.footer[_ngcontent-%COMP%] {\n  width: 100%;\n  display: flex;\n  align-items: center;\n  font-weight: 200;\n  font-family: \"Courier New\", Courier, monospace;\n  color: lightgray;\n  font-size: 1.5rem;\n}\n\n.footer__text[_ngcontent-%COMP%] {\n  flex: 2;\n  margin: 0.5rem 0;\n  flex-direction: column;\n}\n\n.footer__buttons[_ngcontent-%COMP%] {\n  flex: 1;\n  flex-direction: row;\n  justify-content: center;\n}\n\n.footer__buttons[_ngcontent-%COMP%]    > button[_ngcontent-%COMP%] {\n  flex: 1;\n  margin: 0.25rem 0.5rem;\n  padding: 0.25rem 0.5rem;\n}\n\n.selected[_ngcontent-%COMP%] {\n  background-color: #3fe73f;\n  color: #2b2b2b;\n}\n\n.selected[_ngcontent-%COMP%]:hover {\n  background-color: #89eb89;\n}\n\n .x-axis path,  .x-axis line,  .y-axis path,  .y-axis line {\n  stroke: lightgray;\n}\n\n .x-axis text,  .y-axis text {\n  color: lightgray;\n  font-size: 1rem;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9kb2pvL0M6XFxGaWxlc1xcUHJvZ3JhbW1pbmdcXGFydFxcdmlzdWFsaXplci9zcmNcXGFwcFxcY29tcG9uZW50c1xcZG9qb1xcZG9qby5jb21wb25lbnQuc2NzcyIsInNyYy9hcHAvY29tcG9uZW50cy9kb2pvL2Rvam8uY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBUUE7RUFDSSxZQUFBO0VBQ0EsYUFBQTtFQUNBLDJCQUFBO0VBQ0EsbUJBQUE7RUFDQSxzQkFBQTtFQUNBLHlCQVRNO0FDRVY7O0FEVUE7RUFDSSxlQUFBO0VBQ0EsZ0JBQUE7RUFDQSw4Q0FBQTtFQUNBLGdCQWZJO0FDUVI7O0FEVUE7RUFDSSxjQUFBO0FDUEo7O0FEVUE7RUFFSSx5QkExQk07RUEyQk4sV0FBQTtFQUNBLFlBQUE7RUFDQSxhQUFBO0VBQ0EsdUJBQUE7QUNSSjs7QURVSTtFQUNJLE9BQUE7RUFDQSxzQkFBQTtBQ1JSOztBRFdJO0VBQ0ksT0FBQTtFQUNBLHNCQUFBO0VBQ0EsbUJBQUE7QUNUUjs7QURhQTtFQUNJLG1CQUFBO0VBQ0Esb0JBQUE7RUFDQSxpQkFBQTtFQUNBLHFCQUFBO0VBQ0EsYUFBQTtFQUNBLFlBQUE7RUFDQSxrQkFBQTtFQUNBLFlBQUE7RUFDQSx1QkFBQTtBQ1ZKOztBRFdJO0VBQ0ksZUFBQTtFQUNBLHlCQUFBO0FDVFI7O0FEV0k7RUFDSSxlQUFBO0VBQ0EsNEJBQUE7QUNUUjs7QURhQTtFQUNJLG9CQUFBO0VBQ0EsaUJBQUE7RUFDQSxxQkFBQTtFQUNBLGFBQUE7RUFDQSxZQUFBO0VBQ0Esa0JBQUE7QUNWSjs7QURlQTtFQUNJLGdCQUFBO0FDWko7O0FEZUE7RUFDSSxXQUFBO0VBQ0EsYUFBQTtFQUNBLG1CQUFBO0VBQ0EsZ0JBQUE7RUFDQSw4Q0FBQTtFQUNBLGdCQW5GSTtFQW9GSixpQkFBQTtBQ1pKOztBRGVJO0VBQ0ksT0FBQTtFQUVBLGdCQUFBO0VBQ0Esc0JBQUE7QUNkUjs7QURtQkk7RUFDSSxPQUFBO0VBQ0EsbUJBQUE7RUFDQSx1QkFBQTtBQ2pCUjs7QURtQlE7RUFDSSxPQUFBO0VBQ0Esc0JBQUE7RUFDQSx1QkFBQTtBQ2pCWjs7QURzQkE7RUFDSSx5QkFwSE07RUFxSE4sY0FqSE07QUM4RlY7O0FEb0JJO0VBQ0kseUJBdEhRO0FDb0doQjs7QURzQkE7Ozs7RUFJSSxpQkF6SEk7QUNzR1I7O0FEc0JBOztFQUVJLGdCQTlISTtFQStISixlQUFBO0FDbkJKIiwiZmlsZSI6InNyYy9hcHAvY29tcG9uZW50cy9kb2pvL2Rvam8uY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyIkcHJpbWFyeTogcmdiKDYzLCAyMzEsIDYzKTtcclxuJHByaW1hcnktbGlnaHQ6IHJnYigxMzcsIDIzNSwgMTM3KTtcclxuXHJcbiRkYXJrOiBibGFjaztcclxuJG1lZGl1bTE6IHJnYig0MywgNDMsIDQzKTtcclxuJG1lZGl1bTI6IHJnYig4OCwgODgsIDg4KTtcclxuJGxpZ2h0OiByZ2IoMjExLCAyMTEsIDIxMSk7XHJcblxyXG46aG9zdHtcclxuICAgIGhlaWdodDogMTAwJTtcclxuICAgIGRpc3BsYXk6IGZsZXg7XHJcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IGZsZXgtc3RhcnQ7XHJcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xyXG4gICAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcclxuICAgIGJhY2tncm91bmQtY29sb3I6ICRtZWRpdW0yO1xyXG59XHJcblxyXG4udGl0bGV7XHJcbiAgICBmb250LXNpemU6IDRyZW07XHJcbiAgICBmb250LXdlaWdodDogMjAwO1xyXG4gICAgZm9udC1mYW1pbHk6ICdDb3VyaWVyIE5ldycsIENvdXJpZXIsIG1vbm9zcGFjZTtcclxuICAgIGNvbG9yOiAkbGlnaHQ7XHJcbn1cclxuXHJcbi5jb250YWluZXJ7XHJcbiAgICBtYXJnaW46IDRyZW0gMDtcclxufVxyXG5cclxuLmdyYXBoe1xyXG4gICAgXHJcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAkbWVkaXVtMTtcclxuICAgIHdpZHRoOiAxMDAlO1xyXG4gICAgaGVpZ2h0OiAxMDAlO1xyXG4gICAgZGlzcGxheTogZmxleDtcclxuICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xyXG5cclxuICAgICZfX2J1dHRvbnN7XHJcbiAgICAgICAgZmxleDogMTtcclxuICAgICAgICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xyXG4gICAgfVxyXG5cclxuICAgICZfX2Rpc3BsYXl7XHJcbiAgICAgICAgZmxleDogMjtcclxuICAgICAgICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xyXG4gICAgICAgIGFsaWduLWl0ZW1zOmNlbnRlcjtcclxuICAgIH1cclxufVxyXG5cclxuYnV0dG9ue1xyXG4gICAgbWFyZ2luOiAwLjVyZW0gMXJlbTtcclxuICAgIHBhZGRpbmc6IDAuNXJlbSAxcmVtO1xyXG4gICAgZm9udC1zaXplOiAxLjVyZW07XHJcbiAgICB0ZXh0LWRlY29yYXRpb246IG5vbmU7XHJcbiAgICBvdXRsaW5lOiBub25lO1xyXG4gICAgYm9yZGVyOiBub25lO1xyXG4gICAgYm9yZGVyLXJhZGl1czogNXB4O1xyXG4gICAgY29sb3I6IGJsYWNrO1xyXG4gICAgYmFja2dyb3VuZC1jb2xvcjogd2hpdGU7XHJcbiAgICAmOmhvdmVye1xyXG4gICAgICAgIGN1cnNvcjogcG9pbnRlcjtcclxuICAgICAgICBiYWNrZ3JvdW5kLWNvbG9yOiByZ2IoMTk0LCAxOTQsIDE5NCk7XHJcbiAgICB9XHJcbiAgICAmOmFjdGl2ZXtcclxuICAgICAgICBjdXJzb3I6IHBvaW50ZXI7XHJcbiAgICAgICAgdHJhbnNmb3JtOiB0cmFuc2xhdGUoMCwycHgpXHJcbiAgICB9XHJcbn1cclxuXHJcbmlucHV0e1xyXG4gICAgcGFkZGluZzogMC41cmVtIDFyZW07XHJcbiAgICBmb250LXNpemU6IDEuNXJlbTtcclxuICAgIHRleHQtZGVjb3JhdGlvbjogbm9uZTtcclxuICAgIG91dGxpbmU6IG5vbmU7XHJcbiAgICBib3JkZXI6IG5vbmU7XHJcbiAgICBib3JkZXItcmFkaXVzOiA1cHg7XHJcbn1cclxuXHJcblxyXG5cclxuLmZvb3Rlci1pbnB1dHtcclxuICAgIG1hcmdpbjogMC41cmVtIDA7XHJcbn1cclxuXHJcbi5mb290ZXJ7XHJcbiAgICB3aWR0aDogMTAwJTtcclxuICAgIGRpc3BsYXk6IGZsZXg7XHJcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xyXG4gICAgZm9udC13ZWlnaHQ6IDIwMDtcclxuICAgIGZvbnQtZmFtaWx5OiAnQ291cmllciBOZXcnLCBDb3VyaWVyLCBtb25vc3BhY2U7XHJcbiAgICBjb2xvcjogJGxpZ2h0O1xyXG4gICAgZm9udC1zaXplOiAxLjVyZW07XHJcbiAgICAvLyBtYXJnaW46IDEuNXJlbSAwO1xyXG5cclxuICAgICZfX3RleHR7XHJcbiAgICAgICAgZmxleDogMjtcclxuICAgICAgICAvLyBwYWRkaW5nOiAwLjVyZW0gMDtcclxuICAgICAgICBtYXJnaW46IDAuNXJlbSAwO1xyXG4gICAgICAgIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XHJcbiAgICB9XHJcblxyXG5cclxuXHJcbiAgICAmX19idXR0b25ze1xyXG4gICAgICAgIGZsZXg6IDE7XHJcbiAgICAgICAgZmxleC1kaXJlY3Rpb246IHJvdztcclxuICAgICAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcclxuXHJcbiAgICAgICAgJiA+IGJ1dHRvbntcclxuICAgICAgICAgICAgZmxleDogMTtcclxuICAgICAgICAgICAgbWFyZ2luOiAwLjI1cmVtIDAuNXJlbTtcclxuICAgICAgICAgICAgcGFkZGluZzogMC4yNXJlbSAwLjVyZW07XHJcbiAgICAgICAgfVxyXG4gICAgfVxyXG59XHJcblxyXG4uc2VsZWN0ZWR7XHJcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiRwcmltYXJ5O1xyXG4gICAgY29sb3I6ICRtZWRpdW0xO1xyXG4gICAgJjpob3ZlcntcclxuICAgICAgICBiYWNrZ3JvdW5kLWNvbG9yOiAkcHJpbWFyeS1saWdodDtcclxuICAgIH1cclxufVxyXG5cclxuOjpuZy1kZWVwLngtYXhpcyBwYXRoLFxyXG46Om5nLWRlZXAueC1heGlzIGxpbmUsXHJcbjo6bmctZGVlcC55LWF4aXMgcGF0aCwgXHJcbjo6bmctZGVlcC55LWF4aXMgbGluZSB7XHJcbiAgICBzdHJva2U6JGxpZ2h0O1xyXG59XHJcblxyXG46Om5nLWRlZXAueC1heGlzIHRleHQsXHJcbjo6bmctZGVlcC55LWF4aXMgdGV4dHtcclxuICAgIGNvbG9yOiAkbGlnaHQ7XHJcbiAgICBmb250LXNpemU6IDFyZW07XHJcbn0iLCI6aG9zdCB7XG4gIGhlaWdodDogMTAwJTtcbiAgZGlzcGxheTogZmxleDtcbiAganVzdGlmeS1jb250ZW50OiBmbGV4LXN0YXJ0O1xuICBhbGlnbi1pdGVtczogY2VudGVyO1xuICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xuICBiYWNrZ3JvdW5kLWNvbG9yOiAjNTg1ODU4O1xufVxuXG4udGl0bGUge1xuICBmb250LXNpemU6IDRyZW07XG4gIGZvbnQtd2VpZ2h0OiAyMDA7XG4gIGZvbnQtZmFtaWx5OiBcIkNvdXJpZXIgTmV3XCIsIENvdXJpZXIsIG1vbm9zcGFjZTtcbiAgY29sb3I6IGxpZ2h0Z3JheTtcbn1cblxuLmNvbnRhaW5lciB7XG4gIG1hcmdpbjogNHJlbSAwO1xufVxuXG4uZ3JhcGgge1xuICBiYWNrZ3JvdW5kLWNvbG9yOiAjMmIyYjJiO1xuICB3aWR0aDogMTAwJTtcbiAgaGVpZ2h0OiAxMDAlO1xuICBkaXNwbGF5OiBmbGV4O1xuICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbn1cbi5ncmFwaF9fYnV0dG9ucyB7XG4gIGZsZXg6IDE7XG4gIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XG59XG4uZ3JhcGhfX2Rpc3BsYXkge1xuICBmbGV4OiAyO1xuICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xuICBhbGlnbi1pdGVtczogY2VudGVyO1xufVxuXG5idXR0b24ge1xuICBtYXJnaW46IDAuNXJlbSAxcmVtO1xuICBwYWRkaW5nOiAwLjVyZW0gMXJlbTtcbiAgZm9udC1zaXplOiAxLjVyZW07XG4gIHRleHQtZGVjb3JhdGlvbjogbm9uZTtcbiAgb3V0bGluZTogbm9uZTtcbiAgYm9yZGVyOiBub25lO1xuICBib3JkZXItcmFkaXVzOiA1cHg7XG4gIGNvbG9yOiBibGFjaztcbiAgYmFja2dyb3VuZC1jb2xvcjogd2hpdGU7XG59XG5idXR0b246aG92ZXIge1xuICBjdXJzb3I6IHBvaW50ZXI7XG4gIGJhY2tncm91bmQtY29sb3I6ICNjMmMyYzI7XG59XG5idXR0b246YWN0aXZlIHtcbiAgY3Vyc29yOiBwb2ludGVyO1xuICB0cmFuc2Zvcm06IHRyYW5zbGF0ZSgwLCAycHgpO1xufVxuXG5pbnB1dCB7XG4gIHBhZGRpbmc6IDAuNXJlbSAxcmVtO1xuICBmb250LXNpemU6IDEuNXJlbTtcbiAgdGV4dC1kZWNvcmF0aW9uOiBub25lO1xuICBvdXRsaW5lOiBub25lO1xuICBib3JkZXI6IG5vbmU7XG4gIGJvcmRlci1yYWRpdXM6IDVweDtcbn1cblxuLmZvb3Rlci1pbnB1dCB7XG4gIG1hcmdpbjogMC41cmVtIDA7XG59XG5cbi5mb290ZXIge1xuICB3aWR0aDogMTAwJTtcbiAgZGlzcGxheTogZmxleDtcbiAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgZm9udC13ZWlnaHQ6IDIwMDtcbiAgZm9udC1mYW1pbHk6IFwiQ291cmllciBOZXdcIiwgQ291cmllciwgbW9ub3NwYWNlO1xuICBjb2xvcjogbGlnaHRncmF5O1xuICBmb250LXNpemU6IDEuNXJlbTtcbn1cbi5mb290ZXJfX3RleHQge1xuICBmbGV4OiAyO1xuICBtYXJnaW46IDAuNXJlbSAwO1xuICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xufVxuLmZvb3Rlcl9fYnV0dG9ucyB7XG4gIGZsZXg6IDE7XG4gIGZsZXgtZGlyZWN0aW9uOiByb3c7XG4gIGp1c3RpZnktY29udGVudDogY2VudGVyO1xufVxuLmZvb3Rlcl9fYnV0dG9ucyA+IGJ1dHRvbiB7XG4gIGZsZXg6IDE7XG4gIG1hcmdpbjogMC4yNXJlbSAwLjVyZW07XG4gIHBhZGRpbmc6IDAuMjVyZW0gMC41cmVtO1xufVxuXG4uc2VsZWN0ZWQge1xuICBiYWNrZ3JvdW5kLWNvbG9yOiAjM2ZlNzNmO1xuICBjb2xvcjogIzJiMmIyYjtcbn1cbi5zZWxlY3RlZDpob3ZlciB7XG4gIGJhY2tncm91bmQtY29sb3I6ICM4OWViODk7XG59XG5cbjo6bmctZGVlcC54LWF4aXMgcGF0aCxcbjo6bmctZGVlcC54LWF4aXMgbGluZSxcbjo6bmctZGVlcC55LWF4aXMgcGF0aCxcbjo6bmctZGVlcC55LWF4aXMgbGluZSB7XG4gIHN0cm9rZTogbGlnaHRncmF5O1xufVxuXG46Om5nLWRlZXAueC1heGlzIHRleHQsXG46Om5nLWRlZXAueS1heGlzIHRleHQge1xuICBjb2xvcjogbGlnaHRncmF5O1xuICBmb250LXNpemU6IDFyZW07XG59Il19 */"] });
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](DojoComponent, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
+        args: [{
+                selector: 'app-dojo',
+                templateUrl: './dojo.component.html',
+                styleUrls: ['./dojo.component.scss'],
+            }]
+    }], function () { return [{ type: src_app_shared_activity_service__WEBPACK_IMPORTED_MODULE_2__["ActivityService"] }]; }, null); })();
+
+
+/***/ }),
+
+/***/ "./src/app/components/rings/rings.component.ts":
+/*!*****************************************************!*\
+  !*** ./src/app/components/rings/rings.component.ts ***!
+  \*****************************************************/
+/*! exports provided: RingsComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RingsComponent", function() { return RingsComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
+/* harmony import */ var textures__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! textures */ "./node_modules/textures/dist/textures.esm.js");
+/* harmony import */ var d3__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! d3 */ "./node_modules/d3/index.js");
+/* harmony import */ var src_app_shared_ringdata_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! src/app/shared/ringdata.service */ "./src/app/shared/ringdata.service.ts");
+
+
+
+
+
+class RingsComponent {
+    constructor(ringDataService) {
+        this.ringDataService = ringDataService;
+        this.color = {
+            background: 'white',
+        };
+        this.canvas = {
+            width: 1600,
+            height: 800,
+        };
+        this.data = [
+            { x: 0.55, y: 0.5, ir: 0.1, or: 0.2, t: 'lines-thin' },
+            { x: 0.45, y: 0.5, ir: 0.25, or: 0.3, t: 'lines-thick' },
+            { x: 0.5, y: 0.5, ir: 0.35, or: 0.45, t: 'lines-thick' },
+            { x: 1, y: 1, ir: 0.5, or: 0.53, t: 'lines-thick' },
+        ];
+        this.textures = {
+            lines: {
+                thin: textures__WEBPACK_IMPORTED_MODULE_1__["default"].lines().lighter(),
+                thick: textures__WEBPACK_IMPORTED_MODULE_1__["default"].lines().heavier(),
+            },
+            sequence: new Array(this.data.length).fill(null).map((_, i) => textures__WEBPACK_IMPORTED_MODULE_1__["default"].circles().radius((i + 1) * 3) //.thicker((i+1)/2).radius(7)
+            )
+        };
+    }
+    ngOnInit() {
+        this.setup();
+        let rings = this.ringDataService.generateRingRow();
+        this.update(rings);
+    }
+    update(data) {
+        const rings = this.svg.selectAll('circles')
+            .data(data);
+        rings.enter()
+            .append('circle')
+            .attr('r', d => this.xScale((d.outerRadius - d.innerRadius) / 2 + d.innerRadius))
+            .attr('cx', d => this.xScale(d.x))
+            .attr('cy', d => this.yScale(d.y))
+            .style("fill", 'none')
+            .style("stroke-width", d => this.xScale(d.outerRadius - d.innerRadius))
+            .style("stroke", (d, i) => {
+            // const params = d.t.split('-')
+            // return this.textures[head(params)][last(params)].url()
+            return this.textures.sequence[i % this.textures.sequence.length].url();
+        });
+    }
+    setup() {
+        this.svg = d3__WEBPACK_IMPORTED_MODULE_2__["select"]('.canvas')
+            .append("svg")
+            .attr('width', this.canvas.width)
+            .attr('height', this.canvas.height)
+            .style('background-color', this.color.background);
+        this.xScale = d3__WEBPACK_IMPORTED_MODULE_2__["scaleLinear"]().domain([0, 1]).range([0, this.canvas.width]);
+        this.yScale = d3__WEBPACK_IMPORTED_MODULE_2__["scaleLinear"]().domain([0, 1]).range([0, this.canvas.height]);
+        this.svg.call(this.textures.lines.thin);
+        this.svg.call(this.textures.lines.thick);
+        this.textures.sequence.forEach((t) => this.svg.call(t));
+    }
+}
+RingsComponent.ɵfac = function RingsComponent_Factory(t) { return new (t || RingsComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](src_app_shared_ringdata_service__WEBPACK_IMPORTED_MODULE_3__["RingDataService"])); };
+RingsComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: RingsComponent, selectors: [["app-rings"]], decls: 1, vars: 0, consts: [[1, "canvas"]], template: function RingsComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "div", 0);
+    } }, styles: ["[_nghost-%COMP%] {\n  height: 100%;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9yaW5ncy9DOlxcRmlsZXNcXFByb2dyYW1taW5nXFxhcnRcXHZpc3VhbGl6ZXIvc3JjXFxhcHBcXGNvbXBvbmVudHNcXHJpbmdzXFxyaW5ncy5jb21wb25lbnQuc2NzcyIsInNyYy9hcHAvY29tcG9uZW50cy9yaW5ncy9yaW5ncy5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNJLFlBQUE7RUFDQSxhQUFBO0VBQ0EsdUJBQUE7RUFDQSxtQkFBQTtBQ0NKIiwiZmlsZSI6InNyYy9hcHAvY29tcG9uZW50cy9yaW5ncy9yaW5ncy5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIjpob3N0e1xyXG4gICAgaGVpZ2h0OiAxMDAlO1xyXG4gICAgZGlzcGxheTogZmxleDtcclxuICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xyXG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcclxufVxyXG4iLCI6aG9zdCB7XG4gIGhlaWdodDogMTAwJTtcbiAgZGlzcGxheTogZmxleDtcbiAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG59Il19 */"] });
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](RingsComponent, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
+        args: [{
+                selector: 'app-rings',
+                templateUrl: './rings.component.html',
+                styleUrls: ['./rings.component.scss']
+            }]
+    }], function () { return [{ type: src_app_shared_ringdata_service__WEBPACK_IMPORTED_MODULE_3__["RingDataService"] }]; }, null); })();
+
+
+/***/ }),
+
+/***/ "./src/app/components/sandbox/sandbox.component.ts":
+/*!*********************************************************!*\
+  !*** ./src/app/components/sandbox/sandbox.component.ts ***!
+  \*********************************************************/
+/*! exports provided: SandboxComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SandboxComponent", function() { return SandboxComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
+/* harmony import */ var d3__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! d3 */ "./node_modules/d3/index.js");
+/* harmony import */ var chroma_ts__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! chroma.ts */ "./node_modules/chroma.ts/dist/index.es.js");
+/* harmony import */ var src_app_shared_colors__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! src/app/shared/colors */ "./src/app/shared/colors.ts");
+
+
+
+
+
+class SandboxComponent {
+    constructor() {
+        var _a;
+        this.ringCount = 24;
+        this.innerRadius = 0.1;
+        this.outerRadius = 0.9;
+        this.step = (this.outerRadius - this.innerRadius) / this.ringCount;
+        this.rings = new Array(this.ringCount).fill(null).map((_, i) => ({
+            innerRadius: this.innerRadius + (i * this.step),
+            outerRadius: this.innerRadius + ((i + 1) * this.step),
+            data: new Array(i + 1).fill(1)
+        }));
+        this.canvas = {
+            width: 4800,
+            height: 4800,
+        };
+        this.center = {
+            x: this.canvas.width / 2,
+            y: this.canvas.height / 2
+        };
+        this.rScale = d3__WEBPACK_IMPORTED_MODULE_1__["scaleLinear"]().domain([0, 1]).range([0, this.canvas.width / 2]);
+        this.colors = (_a = src_app_shared_colors__WEBPACK_IMPORTED_MODULE_3__["colorPalettes"].find(p => p.name === 'RdBu')) === null || _a === void 0 ? void 0 : _a.colors;
+        this.index = 0;
+        this.pause = false;
+    }
+    ngOnInit() {
+        this.setup();
+        this.updateRings(this.rings);
+        this.svg.on('click', ({ offsetX, offsetY }) => {
+            // this.pause = !this.pause
+            this.updateRings(this.rings);
+        });
+        // d3.interval(()=>{
+        // if(!this.pause){
+        // this.updateRings(this.rings)
+        // }
+        // },200)
+        d3__WEBPACK_IMPORTED_MODULE_1__["select"]("#download")
+            .on('click', function () {
+            // Get the d3js SVG element and save using saveSvgAsPng.js
+            // saveSvgAsPng(document.getElementsByTagName("svg")[0], `${makeid()}.png`, {scale: 2, backgroundColor: "#FFFFFF"});
+        });
+    }
+    saveImg() {
+    }
+    updateRings(rings) {
+        rings.forEach((ring, i) => {
+            this.update(ring, this.groups[i]);
+            // ring.data[this.index%ring.data.length]+=1
+        });
+        // this.index++;
+    }
+    setup() {
+        this.colorMachine = chroma_ts__WEBPACK_IMPORTED_MODULE_2__["scale"](this.colors);
+        this.canvasRef = d3__WEBPACK_IMPORTED_MODULE_1__["select"](".canvas");
+        this.svg = this.canvasRef.append('svg')
+            .attr('width', this.canvas.width)
+            .attr('height', this.canvas.height)
+            .style('background-color', 'black');
+        this.groups = new Array(this.rings.length).fill(null).map((_) => this.svg.append('g').attr('transform', `translate(${this.center.x},${this.center.y})`));
+    }
+    update(ring, group) {
+        group.exit().remove();
+        const arcPath = d3__WEBPACK_IMPORTED_MODULE_1__["arc"]()
+            .outerRadius(this.rScale(ring.outerRadius))
+            .innerRadius(this.rScale(ring.innerRadius));
+        const pie = d3__WEBPACK_IMPORTED_MODULE_1__["pie"]().sort(null); //.value((d:any) => d.value)
+        const paths = group.selectAll('path').data(pie(ring.data));
+        paths.enter()
+            .append('path')
+            .attr('class', 'arc')
+            .merge(paths)
+            // .transition().duration(400)
+            .attr('d', (d) => arcPath(d))
+            .attr('fill', (_, i) => this.colorMachine(i / (ring.data.length - 1)))
+            .attr('stroke', 'black')
+            .attr('stroke-width', 20);
+    }
+}
+SandboxComponent.ɵfac = function SandboxComponent_Factory(t) { return new (t || SandboxComponent)(); };
+SandboxComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: SandboxComponent, selectors: [["app-sandbox"]], decls: 1, vars: 0, consts: [["id", "download", 1, "canvas"]], template: function SandboxComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "div", 0);
+    } }, styles: ["[_nghost-%COMP%] {\n  height: 100%;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9zYW5kYm94L0M6XFxGaWxlc1xcUHJvZ3JhbW1pbmdcXGFydFxcdmlzdWFsaXplci9zcmNcXGFwcFxcY29tcG9uZW50c1xcc2FuZGJveFxcc2FuZGJveC5jb21wb25lbnQuc2NzcyIsInNyYy9hcHAvY29tcG9uZW50cy9zYW5kYm94L3NhbmRib3guY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDSSxZQUFBO0VBQ0EsYUFBQTtFQUNBLHVCQUFBO0VBQ0EsbUJBQUE7QUNDSiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudHMvc2FuZGJveC9zYW5kYm94LmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiOmhvc3R7XHJcbiAgICBoZWlnaHQ6IDEwMCU7XHJcbiAgICBkaXNwbGF5OiBmbGV4O1xyXG4gICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XHJcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xyXG59XHJcbiIsIjpob3N0IHtcbiAgaGVpZ2h0OiAxMDAlO1xuICBkaXNwbGF5OiBmbGV4O1xuICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbn0iXX0= */"] });
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](SandboxComponent, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
+        args: [{
+                selector: 'app-sandbox',
+                templateUrl: './sandbox.component.html',
+                styleUrls: ['./sandbox.component.scss']
+            }]
+    }], function () { return []; }, null); })();
+
+
+/***/ }),
+
+/***/ "./src/app/components/slash/slash.component.ts":
+/*!*****************************************************!*\
+  !*** ./src/app/components/slash/slash.component.ts ***!
+  \*****************************************************/
+/*! exports provided: SlashComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SlashComponent", function() { return SlashComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
+/* harmony import */ var d3__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! d3 */ "./node_modules/d3/index.js");
+/* harmony import */ var textures__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! textures */ "./node_modules/textures/dist/textures.esm.js");
+
+
+
+
+class SlashComponent {
+    constructor() {
+        this.color = {
+            background: 'white',
+        };
+        this.canvas = {
+            width: 800,
+            height: 800,
+        };
+        this.path = [];
+        this.stopPoints = [
+            { x: 0.2, y: 0.5 },
+            { x: 0.8, y: 0.5 },
+        ];
+        this.slashes = [
+            0, 1
+            // {
+            //   stopIndexStart: 0,
+            //   stopIndexEnd: 1,
+            // }
+        ];
+    }
+    ngOnInit() {
+        this.setup();
+        this.updateStopPoints(this.stopPoints);
+        // this.updateSlashes(this.slashes,this.stopPoints);
+    }
+    setup() {
+        this.svg = d3__WEBPACK_IMPORTED_MODULE_1__["select"]('.canvas')
+            .append("svg")
+            .attr('width', this.canvas.width)
+            .attr('height', this.canvas.height)
+            .style('background-color', this.color.background);
+        this.xScale = d3__WEBPACK_IMPORTED_MODULE_1__["scaleLinear"]().domain([0, 1]).range([0, this.canvas.width]);
+        this.yScale = d3__WEBPACK_IMPORTED_MODULE_1__["scaleLinear"]().domain([0, 1]).range([0, this.canvas.height]);
+        this.stopPointGroup = this.svg.append('g');
+        this.slashGroup = this.svg.append('g');
+        // this.lineGenerator = d3.line()
+        //   .x(d=> this.xScale(d))
+        //   .y(d=> this.yScale())
+    }
+    updateSlashes(slashes, stopPoints) {
+        let lc = d3__WEBPACK_IMPORTED_MODULE_1__["line"]()
+            // .curve(d3[curve])
+            .x((d) => this.xScale(d.x))
+            .y((d) => this.yScale(d.y));
+        // const slashGroup = this.slashGroup.selectAll('path')
+        //   .data(slashes)
+        this.svg.append('path')
+            .attr('fill', 'white')
+            .attr('stroke', 'white')
+            .attr('stroke-width', 2)
+            .attr('d', d => lc());
+        // slashGroup.enter()
+        //   .append('path')
+        //   .attr('fill','red')
+        //   .attr('stroke','white')
+        //   .attr('stroke-width',20)
+        //   .attr('d',(d:number)=> {
+        //     console.log("d",d)
+        //     let p: Point = stopPoints[d];
+        //     console.log("p",lc([p]))
+        //     return lc([p])
+        //   })
+    }
+    updateStopPoints(stopPoints) {
+        // const circles = this.stopPointGroup.selectAll('circle')
+        //   .data(stopPoints)
+        // circles.exit().remove();
+        // circles.enter()
+        //   .append('circle')
+        // var svg = d3.select("#example")
+        //   .append("svg");
+        console.log("textures", textures__WEBPACK_IMPORTED_MODULE_2__["default"]);
+        var t = textures__WEBPACK_IMPORTED_MODULE_2__["default"].lines()
+            .heavier()
+            .thicker();
+        this.svg.call(t);
+        this.svg.append("circle")
+            .attr('r', this.xScale(0.25))
+            .attr('cx', this.xScale(0.5))
+            .attr('cy', this.yScale(0.5))
+            .style("fill", 'none')
+            .style("stroke-width", 80)
+            .style("stroke", t.url());
+    }
+}
+SlashComponent.ɵfac = function SlashComponent_Factory(t) { return new (t || SlashComponent)(); };
+SlashComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: SlashComponent, selectors: [["app-slash"]], decls: 1, vars: 0, consts: [[1, "canvas"]], template: function SlashComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "div", 0);
+    } }, styles: ["[_nghost-%COMP%] {\n  height: 100%;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9zbGFzaC9DOlxcRmlsZXNcXFByb2dyYW1taW5nXFxhcnRcXHZpc3VhbGl6ZXIvc3JjXFxhcHBcXGNvbXBvbmVudHNcXHNsYXNoXFxzbGFzaC5jb21wb25lbnQuc2NzcyIsInNyYy9hcHAvY29tcG9uZW50cy9zbGFzaC9zbGFzaC5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNJLFlBQUE7RUFDQSxhQUFBO0VBQ0EsdUJBQUE7RUFDQSxtQkFBQTtBQ0NKIiwiZmlsZSI6InNyYy9hcHAvY29tcG9uZW50cy9zbGFzaC9zbGFzaC5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIjpob3N0e1xyXG4gICAgaGVpZ2h0OiAxMDAlO1xyXG4gICAgZGlzcGxheTogZmxleDtcclxuICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xyXG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcclxufVxyXG4iLCI6aG9zdCB7XG4gIGhlaWdodDogMTAwJTtcbiAgZGlzcGxheTogZmxleDtcbiAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG59Il19 */"] });
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](SlashComponent, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
+        args: [{
+                selector: 'app-slash',
+                templateUrl: './slash.component.html',
+                styleUrls: ['./slash.component.scss']
+            }]
+    }], function () { return []; }, null); })();
+
+
+/***/ }),
+
+/***/ "./src/app/components/tree/tree.component.ts":
+/*!***************************************************!*\
+  !*** ./src/app/components/tree/tree.component.ts ***!
+  \***************************************************/
+/*! exports provided: TreeComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TreeComponent", function() { return TreeComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
+
+
+class TreeComponent {
+    constructor() {
+        this.data_hierarchy = {
+            name: 'mario',
+            children: [
+                {
+                    name: 'yoshi'
+                },
+                {
+                    name: 'toad',
+                    children: [
+                        {
+                            name: 'bowser'
+                        }
+                    ]
+                }
+            ]
+        };
+        this.data_stratify = [
+            { name: 'mario' },
+            { name: 'yoshi', parent: 'mario' },
+            { name: 'toad', parent: 'mario' },
+            { name: 'bowser', parent: 'toad' }
+        ];
+    }
+    ngOnInit() {
+    }
+}
+TreeComponent.ɵfac = function TreeComponent_Factory(t) { return new (t || TreeComponent)(); };
+TreeComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: TreeComponent, selectors: [["app-tree"]], decls: 2, vars: 0, template: function TreeComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "p");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, "tree works!");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    } }, styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudHMvdHJlZS90cmVlLmNvbXBvbmVudC5zY3NzIn0= */"] });
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](TreeComponent, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
+        args: [{
+                selector: 'app-tree',
+                templateUrl: './tree.component.html',
+                styleUrls: ['./tree.component.scss']
+            }]
+    }], function () { return []; }, null); })();
+
+
+/***/ }),
+
+/***/ "./src/app/components/visualizer/visualizer.component.ts":
+/*!***************************************************************!*\
+  !*** ./src/app/components/visualizer/visualizer.component.ts ***!
+  \***************************************************************/
+/*! exports provided: VisualizerComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "VisualizerComponent", function() { return VisualizerComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
+/* harmony import */ var d3__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! d3 */ "./node_modules/d3/index.js");
+/* harmony import */ var chroma_ts__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! chroma.ts */ "./node_modules/chroma.ts/dist/index.es.js");
+/* harmony import */ var src_app_shared_colors__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! src/app/shared/colors */ "./src/app/shared/colors.ts");
+
+
+
+
+
+class VisualizerComponent {
+    constructor() {
+        var _a;
+        this.canvas = {
+            width: 600,
+            height: 600,
+        };
+        this.gridDims = {
+            width: 8,
+            height: 8,
+        };
+        this.tileWidth = this.canvas.width / this.gridDims.width;
+        this.tileHeight = this.canvas.height / this.gridDims.height;
+        this.colors = (_a = src_app_shared_colors__WEBPACK_IMPORTED_MODULE_3__["colorPalettes"].find(p => p.name === 'Spectral')) === null || _a === void 0 ? void 0 : _a.colors;
+        this.grid = [];
+    }
+    ngOnInit() {
+        this.setup();
+        this.update(this.grid);
+        this.svg.on('click', ({ offsetX, offsetY }) => {
+            let clickLocation = { x: offsetX, y: offsetY };
+            this.grid.push(this.grid.shift());
+            this.update(this.grid, clickLocation);
+        });
+    }
+    setup() {
+        this.colorMachine = chroma_ts__WEBPACK_IMPORTED_MODULE_2__["scale"](this.colors);
+        let index = 0;
+        for (let i = 0; i < this.gridDims.width; i++) {
+            let col = [];
+            for (let j = 0; j < this.gridDims.height; j++) {
+                col.push({
+                    x: i / this.gridDims.width,
+                    y: j / this.gridDims.height,
+                    fill: this.colorMachine((index % this.gridDims.width) / this.gridDims.width),
+                });
+                index++;
+            }
+            if (i % 2 === 0) {
+                col = col.reverse();
+            }
+            this.grid = [...this.grid, ...col];
+        }
+        this.canvasRef = d3__WEBPACK_IMPORTED_MODULE_1__["select"](".canvas");
+        this.svg = this.canvasRef.append('svg')
+            .attr('width', this.canvas.width)
+            .attr('height', this.canvas.height)
+            .style('background-color', 'white');
+        this.xScale = d3__WEBPACK_IMPORTED_MODULE_1__["scaleLinear"]().domain([0, 1]).range([0, this.canvas.width]);
+        this.yScale = d3__WEBPACK_IMPORTED_MODULE_1__["scaleLinear"]().domain([0, 1]).range([0, this.canvas.height]);
+    }
+    update(grid, clickLocation = { x: 0, y: 0 }) {
+        if (false) {}
+        const tiles = this.svg.selectAll('rect')
+            .data(grid);
+        tiles.exit().remove();
+        tiles.attr("width", this.tileWidth)
+            .attr("height", this.tileHeight);
+        tiles.enter()
+            .append('rect')
+            .attr("width", this.tileWidth)
+            .attr("height", this.tileHeight)
+            .attr('fill', d => d.fill)
+            // merges enter selection and rects in the dom already
+            // lines below are applied to both
+            .merge(tiles)
+            .transition().duration(1000)
+            .attr('x', d => this.xScale(d.x))
+            .attr('y', d => this.yScale(d.y));
+    }
+}
+VisualizerComponent.ɵfac = function VisualizerComponent_Factory(t) { return new (t || VisualizerComponent)(); };
+VisualizerComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: VisualizerComponent, selectors: [["app-visualizer"]], decls: 1, vars: 0, consts: [[1, "canvas"]], template: function VisualizerComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "div", 0);
+    } }, styles: ["[_nghost-%COMP%] {\n  height: 100%;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy92aXN1YWxpemVyL0M6XFxGaWxlc1xcUHJvZ3JhbW1pbmdcXGFydFxcdmlzdWFsaXplci9zcmNcXGFwcFxcY29tcG9uZW50c1xcdmlzdWFsaXplclxcdmlzdWFsaXplci5jb21wb25lbnQuc2NzcyIsInNyYy9hcHAvY29tcG9uZW50cy92aXN1YWxpemVyL3Zpc3VhbGl6ZXIuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDSSxZQUFBO0VBQ0EsYUFBQTtFQUNBLHVCQUFBO0VBQ0EsbUJBQUE7QUNDSiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudHMvdmlzdWFsaXplci92aXN1YWxpemVyLmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiOmhvc3R7XHJcbiAgICBoZWlnaHQ6IDEwMCU7XHJcbiAgICBkaXNwbGF5OiBmbGV4O1xyXG4gICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XHJcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xyXG59XHJcbiIsIjpob3N0IHtcbiAgaGVpZ2h0OiAxMDAlO1xuICBkaXNwbGF5OiBmbGV4O1xuICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbn0iXX0= */"] });
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](VisualizerComponent, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
+        args: [{
+                selector: 'app-visualizer',
+                templateUrl: './visualizer.component.html',
+                styleUrls: ['./visualizer.component.scss']
+            }]
+    }], function () { return []; }, null); })();
+
+
+/***/ }),
+
+/***/ "./src/app/midi.service.ts":
+/*!*********************************!*\
+  !*** ./src/app/midi.service.ts ***!
+  \*********************************/
+/*! exports provided: MidiService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MidiService", function() { return MidiService; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
+/* harmony import */ var _tonejs_midi__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @tonejs/midi */ "./node_modules/@tonejs/midi/dist/Midi.js");
+/* harmony import */ var _tonejs_midi__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_tonejs_midi__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! rxjs */ "./node_modules/rxjs/_esm2015/index.js");
+/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! rxjs/operators */ "./node_modules/rxjs/_esm2015/operators/index.js");
+
+
+
+
+
+class MidiService {
+    constructor() {
+    }
+    loadMidi() {
+        return Object(rxjs__WEBPACK_IMPORTED_MODULE_2__["from"])(_tonejs_midi__WEBPACK_IMPORTED_MODULE_1__["Midi"].fromUrl("../assets/001.mid")).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["share"])());
+    }
+}
+MidiService.ɵfac = function MidiService_Factory(t) { return new (t || MidiService)(); };
+MidiService.ɵprov = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjectable"]({ token: MidiService, factory: MidiService.ɵfac, providedIn: 'root' });
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](MidiService, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"],
+        args: [{
+                providedIn: 'root'
+            }]
+    }], function () { return []; }, null); })();
+
+
+/***/ }),
+
+/***/ "./src/app/shared/activity.service.ts":
+/*!********************************************!*\
+  !*** ./src/app/shared/activity.service.ts ***!
+  \********************************************/
+/*! exports provided: Activity, ActivityService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Activity", function() { return Activity; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ActivityService", function() { return ActivityService; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! rxjs */ "./node_modules/rxjs/_esm2015/index.js");
+
+
+
+var Activity;
+(function (Activity) {
+    Activity[Activity["Cycling"] = 0] = "Cycling";
+    Activity[Activity["Running"] = 1] = "Running";
+    Activity[Activity["Swimming"] = 2] = "Swimming";
+    Activity[Activity["Walking"] = 3] = "Walking";
+})(Activity || (Activity = {}));
+class ActivityService {
+    constructor() {
+        this.updateData$ = new rxjs__WEBPACK_IMPORTED_MODULE_1__["Subject"]();
+        this.data = [
+            ...new Array(5).fill(null).map(() => this.getRandomActivityItem(Activity.Cycling)),
+            ...new Array(5).fill(null).map(() => this.getRandomActivityItem(Activity.Walking)),
+            ...new Array(5).fill(null).map(() => this.getRandomActivityItem(Activity.Running)),
+            ...new Array(5).fill(null).map(() => this.getRandomActivityItem(Activity.Swimming)),
+        ];
+    }
+    getActivityData(activity = Activity.Cycling) {
+        return this.data.filter((a) => a.activity === activity);
+    }
+    updateData() {
+        this.updateData$.next();
+    }
+    deleteData() {
+        this.data.splice(Math.floor(Math.random() * this.data.length), 1);
+        this.updateData$.next();
+    }
+    addData() {
+        this.data.push(this.getRandomActivityItem());
+        this.updateData$.next();
+    }
+    getRandomActivityItem(activity = null) {
+        let y = 2020;
+        let m = 11;
+        if (activity === null) {
+            activity = Activity[Object.keys(Activity)[Math.floor(Math.random() * Object.keys(Activity).length)]];
+        }
+        return {
+            distance: Math.floor((Math.random() * 1600) * 100) / 100 + 200,
+            date: new Date(y, m, Math.floor(Math.random() * 28)).toString(),
+            activity,
+        };
+    }
+}
+ActivityService.ɵfac = function ActivityService_Factory(t) { return new (t || ActivityService)(); };
+ActivityService.ɵprov = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjectable"]({ token: ActivityService, factory: ActivityService.ɵfac, providedIn: 'root' });
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](ActivityService, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"],
+        args: [{
+                providedIn: 'root'
+            }]
+    }], function () { return []; }, null); })();
+
+
+/***/ }),
+
+/***/ "./src/app/shared/colors.ts":
+/*!**********************************!*\
+  !*** ./src/app/shared/colors.ts ***!
+  \**********************************/
+/*! exports provided: colorPalettes */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "colorPalettes", function() { return colorPalettes; });
+/* harmony import */ var _helpers__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./helpers */ "./src/app/shared/helpers.ts");
+
+const colorPalettes = [
+    { "name": "empusa", colors: ["#c92a28", "#e69301", "#1f8793", "#13652b", "#e7d8b0", "#48233b", "#e3b3ac", "#f0f0f2", "#1a1a1a"] },
+    { colors: ["#ff5937", "#f6f6f4", "#f6f6f4", "#f6f6f4", "#ff5937"], "name": "spatial02" },
+    { colors: ["#f3cb4d", "#f2f5e3", "#20191b", "#67875c", "#433d5f", "#67875c"], "name": "ducci_d" },
+    { "name": "cc238", colors: ["#553c60", "#ffb0a0", "#ff6749", "#fbe090", "#f5e9de"] },
+    { colors: ["#004996", "#567bae", "#ffc000", "#ffdca4", "#fff8e7", "#004996"], "name": "rohlfs_1Y" },
+    { "name": "ducci_a", colors: ["#809498", "#d3990e", "#000000", "#ecddc5", "#863f52", "#ecddc5"] },
+    { "name": "pubu", colors: ["#fff7fb", "#ece7f2", "#d0d1e6", "#a6bddb", "#74a9cf", "#3690c0", "#0570b0", "#045a8d", "#023858"] },
+    { "name": "ducci_g", colors: ["#c75669", "#000000", "#11706a", "#ecddc5", "#11706a"] },
+    { "name": "dt08", colors: ["#5d9d88", "#ebb43b", "#efebda", "#efebda"] },
+    { "name": "rohlfs_3", colors: ["#abdfdf", "#fde500", "#58bdbc", "#eff0dd", "#f76975", "#211029"] },
+    { "name": "Purples", colors: ["#fcfbfd", "#efedf5", "#dadaeb", "#bcbddc", "#9e9ac8", "#807dba", "#6a51a3", "#54278f", "#3f007d"] },
+    { "name": "brbg", colors: ["#543005", "#8c510a", "#bf812d", "#dfc27d", "#f6e8c3", "#f5f5f5", "#c7eae5", "#80cdc1", "#35978f", "#01665e", "#003c30"] },
+    { colors: ["#271f47", "#e7ceb5", "#cc2b1c", "#271f47"], "name": "dt06" },
+    { colors: ["#ff5937", "#f6f6f4", "#4169ff", "#f6f6f4", "#ff5937"], "name": "spatial01" },
+    { "name": "winter-night", colors: ["#122438", "#dd672e", "#87c7ca", "#ebebeb", "#ebebeb"] },
+    { "name": "PRGn", colors: ["#40004b", "#762a83", "#9970ab", "#c2a5cf", "#e7d4e8", "#f7f7f7", "#d9f0d3", "#a6dba0", "#5aae61", "#1b7837", "#00441b"] },
+    { "name": "sprague", colors: ["#ec2f28", "#f8cd28", "#1e95bb", "#fbaab3", "#fcefdf", "#fcefdf", "#221e1f"] },
+    { colors: ["#d75c49", "#f0efea", "#509da4", "#fff", "#000"], "name": "system.#07" },
+    { colors: ["#e72e81", "#f0bf36", "#3056a2", "#ffffff", "#000000"], "name": "jung_horse" },
+    { colors: ["#1b9e77", "#d95f02", "#7570b3", "#e7298a", "#66a61e", "#e6ab02", "#a6761d", "#666666"], "name": "dark2" },
+    { "name": "kov_05", colors: ["#de3f1a", "#de9232", "#007158", "#e6cdaf", "#869679", "#7aa5a6", "#010006"] },
+    { colors: ["#ffffcc", "#ffeda0", "#fed976", "#feb24c", "#fd8d3c", "#fc4e2a", "#e31a1c", "#bd0026", "#800026"], "name": "ylorrd" },
+    { colors: ["#ff6555", "#ffb58f", "#d8eecf", "#8c4b47", "#bf7f93", "#ffda82", "#2b0404"], "name": "hilda05" },
+    { "name": "Oranges", colors: ["#fff5eb", "#fee6ce", "#fdd0a2", "#fdae6b", "#fd8d3c", "#f16913", "#d94801", "#a63603", "#7f2704"] },
+    { "name": "kov_06b", colors: ["#d57846", "#dfe0cc", "#de442f", "#e7d3c5", "#5ec227", "#302f35", "#63bdb3", "#dfd4c1", "#292319"] },
+    { "name": "system.#06", colors: ["#e5475c", "#95b394", "#28343b", "#f7c6a3", "#eb8078", "#fff", "#000"] },
+    { colors: ["#313a42", "#9aad2e", "#f0ae3c", "#df4822", "#8eac9b", "#cc3d3f", "#ec8b1c", "#1b9268", "#e5e2cf", "#463930"], "name": "harvest" },
+    { colors: ["#87c3ca", "#7b7377", "#b2475d", "#7d3e3e", "#eb7f64", "#d9c67a", "#f3f2f2"], "name": "tundra3" },
+    { colors: ["#f7fcf5", "#e5f5e0", "#c7e9c0", "#a1d99b", "#74c476", "#41ab5d", "#238b45", "#006d2c", "#00441b"], "name": "greens" },
+    { colors: ["#fff5f0", "#fee0d2", "#fcbba1", "#fc9272", "#fb6a4a", "#ef3b2c", "#cb181d", "#a50f15", "#67000d"], "name": "reds" },
+    { colors: ["#253852", "#51222f", "#b53435", "#ecbb51", "#eeccc2"], "name": "hermes" },
+    { colors: ["#f7f4f9", "#e7e1ef", "#d4b9da", "#c994c7", "#df65b0", "#e7298a", "#ce1256", "#980043", "#67001f"], "name": "PuRd" },
+    { "name": "dt01", colors: ["#172a89", "#f7f7f3", "#f3abb0", "#172a89"] },
+    { "name": "RdYlBu", colors: ["#a50026", "#d73027", "#f46d43", "#fdae61", "#fee090", "#ffffbf", "#e0f3f8", "#abd9e9", "#74add1", "#4575b4", "#313695"] },
+    { colors: ["#f40104", "#f6c0b3", "#99673a", "#f0f1f4", "#191e36", "#191e36"], "name": "butterfly" },
+    { colors: ["#817c77", "#396c68", "#89e3b7", "#f59647", "#d63644", "#893f49", "#4d3240"], "name": "roygbiv-toned" },
+    { colors: ["#395e54", "#e77b4d", "#050006", "#e55486", "#efe0bc", "#050006"], "name": "ducci_jb" },
+    { "name": "retro-washedout", colors: ["#878a87", "#cbdbc8", "#e8e0d4", "#b29e91", "#9f736c", "#b76254", "#dfa372"] },
+    { colors: ["#f6625a", "#92b29f", "#272c3f", "#fff", "#000"], "name": "system.#08" },
+    { "name": "cc232", colors: ["#5c5f46", "#ff7044", "#ffce39", "#66aeaa", "#e9ecde"] },
+    { "name": "jud_cabinet", colors: ["#f0afb7", "#f6bc12", "#1477bb", "#41bb9b", "#e3ded8", "#020508"] },
+    { "name": "byrnes", colors: ["#c54514", "#dca215", "#23507f", "#e8e7d4", "#0b0b0b"] },
+    { "name": "Pastel2", colors: ["#b3e2cd", "#fdcdac", "#cbd5e8", "#f4cae4", "#e6f5c9", "#fff2ae", "#f1e2cc", "#cccccc"] },
+    { colors: ["#c37c2b", "#f6ecce", "#000000", "#386a7a", "#e3cd98", "#386a7a"], "name": "ducci_e" },
+    { colors: ["#f6d700", "#f2d692", "#000000", "#5d3552", "#ff7426", "#5d3552"], "name": "ducci_u" },
+    { "name": "bugn", colors: ["#f7fcfd", "#e5f5f9", "#ccece6", "#99d8c9", "#66c2a4", "#41ae76", "#238b45", "#006d2c", "#00441b"] },
+    { "name": "rohlfs_1R", colors: ["#004996", "#567bae", "#ff4c48", "#ffbcb3", "#fff8e7", "#004996"] },
+    { "name": "iiso_airlines", colors: ["#fe765a", "#ffb468", "#4b588f", "#faf1e0", "#fae5c8", "#1c1616"] },
+    { colors: ["#052e57", "#de8d80", "#efebda", "#efebda"], "name": "dt09" },
+    { colors: ["#e85b30", "#ef9e28", "#c6ac71", "#e0c191", "#3f6279", "#ee854e", "#180305", "#ede4cb", "#180305"], "name": "nowak" },
+    { "name": "iiso_zeitung", colors: ["#ee8067", "#f3df76", "#00a9c0", "#f7ab76", "#f5efcb", "#111a17"] },
+    { "name": "frozen-rose", colors: ["#29368f", "#e9697b", "#1b164d", "#f7d996", "#f2e8e4"] },
+    { "name": "cherfi", colors: ["#99cb9f", "#cfb610", "#d00701", "#dba78d", "#2e2c1d", "#bfbea2", "#d2cfaf", "#e3e2c5", "#332e22"] },
+    { colors: ["#e41a1c", "#377eb8", "#4daf4a", "#984ea3", "#ff7f00", "#ffff33", "#a65628", "#f781bf", "#999999"], "name": "set1" },
+    { "name": "cc245", colors: ["#0d4a4e", "#ff947b", "#ead3a2", "#5284ab", "#f6f4ed"] },
+    { "name": "PuBuGn", colors: ["#fff7fb", "#ece2f0", "#d0d1e6", "#a6bddb", "#67a9cf", "#3690c0", "#02818a", "#016c59", "#014636"] },
+    { "name": "verena", colors: ["#f1594a", "#f5b50e", "#14a160", "#2969de", "#885fa4", "#e2e6e8", "#1a1a1a"] },
+    { colors: ["#fbb4ae", "#b3cde3", "#ccebc5", "#decbe4", "#fed9a6", "#ffffcc", "#e5d8bd", "#fddaec", "#f2f2f2"], "name": "Pastel1" },
+    { "name": "jupiter", colors: ["#c03a53", "#edd09e", "#aab5af", "#023629", "#eba735", "#8e9380", "#6c4127", "#e6e2d6", "#12110f"] },
+    { "name": "jud_playground", colors: ["#f04924", "#fcce09", "#408ac9", "#ffffff", "#2e2925"] },
+    { "name": "rdbu", colors: ["#67001f", "#b2182b", "#d6604d", "#f4a582", "#fddbc7", "#f7f7f7", "#d1e5f0", "#92c5de", "#4393c3", "#2166ac", "#053061"] },
+    { "name": "jung_croc", colors: ["#f13274", "#eed03e", "#405e7f", "#19a198", "#ffffff", "#000000"] },
+    { colors: ["#66c2a5", "#fc8d62", "#8da0cb", "#e78ac3", "#a6d854", "#ffd92f", "#e5c494", "#b3b3b3"], "name": "set2" },
+    { "name": "tundra1", colors: ["#40708c", "#8e998c", "#5d3f37", "#ed6954", "#f2e9e2"] },
+    { colors: ["#687f72", "#cc7d6c", "#dec36f", "#dec7af", "#ad8470", "#424637", "#cfc7b9", "#251c12"], "name": "tsu_akasaka" },
+    { "name": "hilda01", colors: ["#ec5526", "#f4ac12", "#9ebbc1", "#f7f4e2", "#e7e8d4", "#1e1b1e"] },
+    { colors: ["#20342a", "#f74713", "#686d2c", "#e9b4a6", "#e5ded8"], "name": "knotberry1" },
+    { "name": "jung_hippo", colors: ["#ff7bac", "#ff921e", "#3ea8f5", "#7ac943", "#ffffff", "#000000"] },
+    { "name": "ducci_v", colors: ["#c65f75", "#d3990e", "#000000", "#597e7a", "#f6eccb", "#597e7a"] },
+    { "name": "BuGn", colors: ["#f7fcfd", "#e5f5f9", "#ccece6", "#99d8c9", "#66c2a4", "#41ae76", "#238b45", "#006d2c", "#00441b"] },
+    { colors: ["#ee5d65", "#f0e5cb", "#f0e5cb", "#080708"], "name": "dt05" },
+    { colors: ["#fff7f3", "#fde0dd", "#fcc5c0", "#fa9fb5", "#f768a1", "#dd3497", "#ae017e", "#7a0177", "#49006a"], "name": "rdpu" },
+    { colors: ["#e8dccc", "#e94641", "#eeaeae", "#6c96be", "#e8dccc"], "name": "kov_02" },
+    { "name": "bloomberg", colors: ["#ff5500", "#f4c145", "#144714", "#2f04fc", "#e276af", "#fff3dd", "#000"] },
+    { colors: ["#fbb4ae", "#b3cde3", "#ccebc5", "#decbe4", "#fed9a6", "#ffffcc", "#e5d8bd", "#fddaec", "#f2f2f2"], "name": "pastel1" },
+    { "name": "hilda04", colors: ["#e95145", "#f6bf7a", "#589da1", "#f5d9bc", "#f5ede1", "#000001"] },
+    { colors: ["#be1c24", "#d1a082", "#037b68", "#d8b1a5", "#1c2738", "#c95a3f", "#f5b28a", "#0e0f27"], "name": "book" },
+    { colors: ["#ff3250", "#ffb33a", "#008c36", "#0085c6", "#4c4c4c", "#faf2e5", "#0b0b0b"], "name": "olympia" },
+    { colors: ["#161f21", "#dedfe4", "#cdbba3", "#eb8b35", "#a43604"], "name": "covfefe" },
+    { "name": "cc273", colors: ["#363d4a", "#7b8a56", "#ff9369", "#f4c172", "#f0efe2"] },
+    { "name": "pubugn", colors: ["#fff7fb", "#ece2f0", "#d0d1e6", "#a6bddb", "#67a9cf", "#3690c0", "#02818a", "#016c59", "#014636"] },
+    { "name": "ducci_q", colors: ["#4bae8c", "#d0c1a0", "#2d3538", "#d06440", "#2d3538"] },
+    { "name": "roygbiv-warm", colors: ["#705f84", "#687d99", "#6c843e", "#fc9a1a", "#dc383a", "#aa3a33", "#9c4257"] },
+    { "name": "hersche", colors: ["#df9f00", "#1f6f50", "#8e6d7f", "#da0607", "#a4a5a7", "#d3d1c3", "#42064f", "#25393a", "#f0f5f6", "#0a0a0a"] },
+    { "name": "jung_bird", colors: ["#fc3032", "#fed530", "#33c3fb", "#ff7bac", "#fda929", "#ffffff", "#000000"] },
+    { "name": "YlOrBr", colors: ["#ffffe5", "#fff7bc", "#fee391", "#fec44f", "#fe9929", "#ec7014", "#cc4c02", "#993404", "#662506"] },
+    { colors: ["#d03718", "#292b36", "#33762f", "#ead7c9", "#ce7028", "#689d8d", "#deb330", "#292b36"], "name": "kov_04" },
+    { "name": "iiso_daily", colors: ["#e76c4a", "#f0d967", "#7f8cb6", "#1daeb1", "#ef9640", "#e2ded2", "#000100"] },
+    { "name": "YlGn", colors: ["#ffffe5", "#f7fcb9", "#d9f0a3", "#addd8e", "#78c679", "#41ab5d", "#238443", "#006837", "#004529"] },
+    { colors: ["#f6c103", "#f6f6f6", "#d1cdc7", "#e7e6e5", "#f5f5f5", "#010001"], "name": "animo" },
+    { "name": "RdGy", colors: ["#67001f", "#b2182b", "#d6604d", "#f4a582", "#fddbc7", "#ffffff", "#e0e0e0", "#bababa", "#878787", "#4d4d4d", "#1a1a1a"] },
+    { colors: ["#dd614a", "#f5cedb", "#1a1e4f", "#fbb900", "#1a1e4f"], "name": "ducci_x" },
+    { colors: ["#ff4242", "#fec101", "#1841fe", "#fcbdcc", "#82e9b5", "#fff", "#000"], "name": "system.#01" },
+    { colors: ["#ed555d", "#fffcc9", "#41b797", "#eda126", "#7b5770", "#2d1922", "#fffcc9"], "name": "revolucion" },
+    { "name": "Set1", colors: ["#e41a1c", "#377eb8", "#4daf4a", "#984ea3", "#ff7f00", "#ffff33", "#a65628", "#f781bf", "#999999"] },
+    { "name": "ducci_i", colors: ["#e9dcad", "#143331", "#ffc000", "#a74c02", "#ffc000"] },
+    { "name": "sneaker", colors: ["#e8165b", "#401e38", "#66c3b4", "#ee7724", "#584098", "#ffffff", "#401e38"] },
+    { "name": "spectral", colors: ["#9e0142", "#d53e4f", "#f46d43", "#fdae61", "#fee08b", "#ffffbf", "#e6f598", "#abdda4", "#66c2a5", "#3288bd", "#5e4fa2"] },
+    { "name": "tsu_harutan", colors: ["#75974a", "#c83e3c", "#f39140", "#e4ded2", "#f8c5a4", "#434f55", "#cfc7b9", "#251c12"] },
+    { "name": "cc234", colors: ["#ffce49", "#ede8dc", "#ff5736", "#ff99b4", "#f7f4ed"] },
+    { "name": "dale_cat", colors: ["#f77656", "#f7f7f7", "#efc545", "#dfe0e2", "#3c70bd", "#66bee4", "#f6e0b8", "#000000"] },
+    { "name": "ducci_o", colors: ["#c15e1f", "#e4a13a", "#000000", "#4d545a", "#dfc79b", "#4d545a"] },
+    { "name": "ylgn", colors: ["#ffffe5", "#f7fcb9", "#d9f0a3", "#addd8e", "#78c679", "#41ab5d", "#238443", "#006837", "#004529"] },
+    { colors: ["#ecddc5", "#79b27b", "#000000", "#ac6548", "#d5c08e", "#ac6548"], "name": "ducci_b" },
+    { "name": "moir", colors: ["#a49f4f", "#d4501e", "#f7c558", "#ebbaa6", "#f7f4ef", "#161716"] },
+    { colors: ["#ff6936", "#fddc3f", "#0075ca", "#00bb70", "#020202", "#ffffff"], "name": "miradors" },
+    { colors: ["#5f9e93", "#3d3638", "#733632", "#b66239", "#b0a1a4", "#e3dad2"], "name": "tundra2" },
+    { "name": "hilda02", colors: ["#eb5627", "#eebb20", "#4e9eb8", "#f7f5d0", "#77c1c0", "#201d13"] },
+    { colors: ["#e3dd34", "#78496b", "#f0527f", "#a7e0e2", "#e0eff0"], "name": "cc239" },
+    { "name": "Set3", colors: ["#8dd3c7", "#ffffb3", "#bebada", "#fb8072", "#80b1d3", "#fdb462", "#b3de69", "#fccde5", "#d9d9d9", "#bc80bd", "#ccebc5", "#ffed6f"] },
+    { "name": "tricolor", colors: ["#ec643b", "#56b7ab", "#f8cb57", "#1f1e43", "#f7f2df"] },
+    { colors: ["#f05e3b", "#ebdec4", "#ffdb00", "#161616", "#ebdec4"], "name": "yuma_punk" },
+    { "name": "rag-taj", colors: ["#ce565e", "#8e1752", "#f8a100", "#3ac1a6", "#efdea2"] },
+    { "name": "florida_citrus", colors: ["#ea7251", "#ebf7f0", "#02aca5", "#9ae2d3", "#050100"] },
+    { colors: ["#a6cee3", "#1f78b4", "#b2df8a", "#33a02c", "#fb9a99", "#e31a1c", "#fdbf6f", "#ff7f00", "#cab2d6", "#6a3d9a", "#ffff99", "#b15928"], "name": "paired" },
+    { colors: ["#440154", "#482777", "#3f4a8a", "#31678e", "#26838f", "#1f9d8a", "#6cce5a", "#b6de2b", "#fee825"], "name": "Viridis" },
+    { colors: ["#b3e2cd", "#fdcdac", "#cbd5e8", "#f4cae4", "#e6f5c9", "#fff2ae", "#f1e2cc", "#cccccc"], "name": "pastel2" },
+    { colors: ["#fd3741", "#fe4f11", "#ff6800", "#ffa61a", "#ffc219", "#ffd114", "#fcd82e", "#f4d730", "#ced562", "#8ac38f", "#79b7a0", "#72b5b1", "#5b9bae", "#6ba1b7", "#49619d", "#604791", "#721e7f", "#9b2b77", "#ab2562", "#ca2847"], "name": "present-correct" },
+    { "name": "rohlfs_4", colors: ["#fde500", "#2f2043", "#f76975", "#eff0dd", "#fbbeca", "#211029"] },
+    { colors: ["#fff5f0", "#fee0d2", "#fcbba1", "#fc9272", "#fb6a4a", "#ef3b2c", "#cb181d", "#a50f15", "#67000d"], "name": "Reds" },
+    { colors: ["#f7fcfd", "#e0ecf4", "#bfd3e6", "#9ebcda", "#8c96c6", "#8c6bb1", "#88419d", "#810f7c", "#4d004b"], "name": "bupu" },
+    { colors: ["#26547C", "#EF476F", "#FFD166", "#06D6A0", "#FFFCF9"], "name": "anchors" },
+    { "name": "kov_03", colors: ["#e3937b", "#d93f1d", "#090d15", "#e6cca7", "#558947", "#090d15"] },
+    { "name": "hilda03", colors: ["#e95145", "#f8b917", "#b8bdc1", "#ffb2a2", "#6b7752", "#010101"] },
+    { colors: ["#004996", "#567bae", "#60bf3c", "#d2deb1", "#fff8e7", "#004996"], "name": "rohlfs_1G" },
+    { "name": "orrd", colors: ["#fff7ec", "#fee8c8", "#fdd49e", "#fdbb84", "#fc8d59", "#ef6548", "#d7301f", "#b30000", "#7f0000"] },
+    { "name": "system.#04", colors: ["#e31f4f", "#f0ac3f", "#18acab", "#26265a", "#ea7d81", "#dcd9d0", "#26265a"] },
+    { "name": "puor", colors: ["#7f3b08", "#b35806", "#e08214", "#fdb863", "#fee0b6", "#f7f7f7", "#d8daeb", "#b2abd2", "#8073ac", "#542788", "#2d004b"] },
+    { "name": "spatial02i", colors: ["#f6f6f4", "#ff5937", "#ff5937", "#ff5937", "#f6f6f4"] },
+    { "name": "YlGnBu", colors: ["#ffffd9", "#edf8b1", "#c7e9b4", "#7fcdbb", "#41b6c4", "#1d91c0", "#225ea8", "#253494", "#081d58"] },
+    { "name": "foxshelter", colors: ["#ff3931", "#007861", "#311f27", "#bab9a4", "#dddddd"] },
+    { "name": "system.#02", colors: ["#ff4242", "#ffd480", "#1e365d", "#edb14c", "#418dcd", "#fff", "#000"] },
+    { colors: ["#67001f", "#b2182b", "#d6604d", "#f4a582", "#fddbc7", "#f7f7f7", "#d1e5f0", "#92c5de", "#4393c3", "#2166ac", "#053061"], "name": "RdBu" },
+    { "name": "rag-gol", colors: ["#d3693e", "#803528", "#f1b156", "#90a798", "#f0e0a4"] },
+    { colors: ["#f14d42", "#f4fdec", "#4fbe5d", "#265487", "#f6e916", "#f9a087", "#2e99d6", "#f4fdec", "#141414"], "name": "honey" },
+    { colors: ["#e51c39", "#f1b844", "#36c4b7", "#666666", "#ffffff", "#000000"], "name": "jung_wolf" },
+    { colors: ["#fff7fb", "#ece7f2", "#d0d1e6", "#a6bddb", "#74a9cf", "#3690c0", "#0570b0", "#045a8d", "#023858"], "name": "PuBu" },
+    { "name": "saami", colors: ["#eab700", "#e64818", "#2c6393", "#eecfca", "#e7e6e4"] },
+    { "name": "Greens", colors: ["#f7fcf5", "#e5f5e0", "#c7e9c0", "#a1d99b", "#74c476", "#41ab5d", "#238b45", "#006d2c", "#00441b"] },
+    { "name": "accent", colors: ["#7fc97f", "#beaed4", "#fdc086", "#ffff99", "#386cb0", "#f0027f", "#bf5b17", "#666666"] },
+    { colors: ["#ec6c26", "#613a53", "#e8ac52", "#639aa0", "#d5cda1"], "name": "rag-mysore" },
+    { "name": "flag_day", colors: ["#2D3142", "#4F5D75", "#BFC0C0", "#FFFFFF", "#EF8354"] },
+    { colors: ["#f7fbff", "#deebf7", "#c6dbef", "#9ecae1", "#6baed6", "#4292c6", "#2171b5", "#08519c", "#08306b"], "name": "Blues" },
+    { "name": "OrRd", colors: ["#fff7ec", "#fee8c8", "#fdd49e", "#fdbb84", "#fc8d59", "#ef6548", "#d7301f", "#b30000", "#7f0000"] },
+    { colors: ["#7fc97f", "#beaed4", "#fdc086", "#ffff99", "#386cb0", "#f0027f", "#bf5b17", "#666666"], "name": "Accent" },
+    { colors: ["#8dd3c7", "#ffffb3", "#bebada", "#fb8072", "#80b1d3", "#fdb462", "#b3de69", "#fccde5", "#d9d9d9", "#bc80bd", "#ccebc5", "#ffed6f"], "name": "set3" },
+    { colors: ["#4d3d9a", "#f76975", "#ffffff", "#eff0dd", "#58bdbc", "#211029"], "name": "rohlfs_2" },
+    { "name": "jungle", colors: ["#adb100", "#e5f4e9", "#f4650f", "#4d6838", "#cb9e00", "#689c7d", "#e2a1a8", "#151c2e", "#cecaa9", "#0e0f27"] },
+    { colors: ["#50978e", "#f7f0df", "#f7f0df", "#000000"], "name": "dt04" },
+    { colors: ["#ffffcc", "#ffeda0", "#fed976", "#feb24c", "#fd8d3c", "#fc4e2a", "#e31a1c", "#bd0026", "#800026"], "name": "YlOrRd" },
+    { "name": "rdylgn", colors: ["#a50026", "#d73027", "#f46d43", "#fdae61", "#fee08b", "#ffffbf", "#d9ef8b", "#a6d96a", "#66bd63", "#1a9850", "#006837"] },
+    { colors: ["#475b62", "#7a999c", "#2a1f1d", "#fbaf3c", "#df4a33", "#f0e0c6", "#af592c", "#f0e0c6", "#2a1f1d"], "name": "delphi" },
+    { "name": "BuPu", colors: ["#f7fcfd", "#e0ecf4", "#bfd3e6", "#9ebcda", "#8c96c6", "#8c6bb1", "#88419d", "#810f7c", "#4d004b"] },
+    { colors: ["#1d3b1a", "#eb4b11", "#e5bc00", "#f29881", "#eae2d0"], "name": "knotberry2" },
+    { "name": "rag-virupaksha", colors: ["#f5736a", "#925951", "#feba4c", "#9d9b9d", "#eedfa2"] },
+    { colors: ["#13477b", "#2f1b10", "#d18529", "#d72a25", "#e42184", "#138898", "#9d2787", "#7f311b", "#dfc792", "#2a1f1d"], "name": "mably" },
+    { "name": "tundra4", colors: ["#d53939", "#b6754d", "#a88d5f", "#524643", "#3c5a53", "#7d8c7c", "#dad6cd"] },
+    { colors: ["#ffffff", "#999999", "#666666", "#333333", "#000000"], "name": "grayscale" },
+    { colors: ["#f46e26", "#68485f", "#3d273a", "#535d55", "#dcd4a6"], "name": "rag-belur" },
+    { colors: ["#4aad8b", "#e15147", "#f3b551", "#cec8b8", "#d1af84", "#544e47", "#cfc7b9", "#251c12"], "name": "tsu_arcade" },
+    { "name": "prgn", colors: ["#40004b", "#762a83", "#9970ab", "#c2a5cf", "#e7d4e8", "#f7f7f7", "#d9f0d3", "#a6dba0", "#5aae61", "#1b7837", "#00441b"] },
+    { colors: ["#8e0152", "#c51b7d", "#de77ae", "#f1b6da", "#fde0ef", "#f7f7f7", "#e6f5d0", "#b8e186", "#7fbc41", "#4d9221", "#276419"], "name": "PiYG" },
+    { "name": "jud_horizon", colors: ["#f8c3df", "#f2e420", "#28b3d0", "#648731", "#ef6a7d", "#f2f0e1", "#030305"] },
+    { colors: ["#e2d574", "#f1f4f7", "#69c5ab", "#f79eac", "#463231"], "name": "lemon_citrus" },
+    { colors: ["#a50026", "#d73027", "#f46d43", "#fdae61", "#fee08b", "#ffffbf", "#d9ef8b", "#a6d96a", "#66bd63", "#1a9850", "#006837"], "name": "RdYlGn" },
+    { "name": "forest", colors: ["#111b1e", "#2f4c58", "#63a583", "#6e93d6", "#e4dbd9"] },
+    { "name": "dale_paddle", colors: ["#ff7a5a", "#765aa6", "#fee7bc", "#515e8c", "#ffc64a", "#b460a6", "#ffffff", "#4781c1", "#abe9e8", "#000000"] },
+    { "name": "mad_carpet", colors: ["#e6d3c2", "#e27673", "#923a50", "#4d696d", "#453b44"] },
+    { colors: ["#6a98a5", "#d24c18", "#efebda", "#efebda"], "name": "dt07" },
+    { "name": "rdgy", colors: ["#67001f", "#b2182b", "#d6604d", "#f4a582", "#fddbc7", "#ffffff", "#e0e0e0", "#bababa", "#878787", "#4d4d4d", "#1a1a1a"] },
+    { colors: ["#69766f", "#9ed6cb", "#f7e5cc", "#9d8f7f", "#936454", "#bf5c32", "#efad57"], "name": "retro" },
+    { colors: ["#bf4a2b", "#cd902a", "#4e4973", "#f5d4bc", "#1e1a43", "#1e1a43"], "name": "floratopia" },
+    { colors: ["#a6cee3", "#1f78b4", "#b2df8a", "#33a02c", "#fb9a99", "#e31a1c", "#fdbf6f", "#ff7f00", "#cab2d6", "#6a3d9a", "#ffff99", "#b15928"], "name": "Paired" },
+    { "name": "iiso_curcuit", colors: ["#f0865c", "#f2b07b", "#6bc4d2", "#1a3643", "#f0f0e8", "#0f1417"] },
+    { colors: ["#c91619", "#fdecd2", "#f4a000", "#4c2653", "#89c2cd", "#111"], "name": "kov_07" },
+    { colors: ["#543005", "#8c510a", "#bf812d", "#dfc27d", "#f6e8c3", "#f5f5f5", "#c7eae5", "#80cdc1", "#35978f", "#01665e", "#003c30"], "name": "BrBG" },
+    { colors: ["#f75952", "#ffce84", "#74b7b2", "#f6f6f6", "#b17d71", "#f6ecd4", "#0e0603"], "name": "hilda06" },
+    { colors: ["#f7fcf0", "#e0f3db", "#ccebc5", "#a8ddb5", "#7bccc4", "#4eb3d3", "#2b8cbe", "#0868ac", "#084081"], "name": "gnbu" },
+    { colors: ["#440154", "#482777", "#3f4a8a", "#31678e", "#26838f", "#1f9d8a", "#6cce5a", "#b6de2b", "#fee825"], "name": "viridis" },
+    { colors: ["#ca3122", "#e5af16", "#4a93a2", "#0e7e39", "#e2b9bd", "#e3ded8", "#1c1616"], "name": "jud_mural" },
+    { "name": "oranges", colors: ["#fff5eb", "#fee6ce", "#fdd0a2", "#fdae6b", "#fd8d3c", "#f16913", "#d94801", "#a63603", "#7f2704"] },
+    { "name": "purd", colors: ["#f7f4f9", "#e7e1ef", "#d4b9da", "#c994c7", "#df65b0", "#e7298a", "#ce1256", "#980043", "#67001f"] },
+    { "name": "dt03", colors: ["#000000", "#a7a7a7", "#0a5e78", "#000000"] },
+    { "name": "Spectral", colors: ["#9e0142", "#d53e4f", "#f46d43", "#fdae61", "#fee08b", "#ffffbf", "#e6f598", "#abdda4", "#66c2a5", "#3288bd", "#5e4fa2"] },
+    { colors: ["#596f7e", "#eae6c7", "#463c21", "#f4cb4c", "#e67300", "#f4cb4c"], "name": "ducci_f" },
+    { "name": "ylgnbu", colors: ["#ffffd9", "#edf8b1", "#c7e9b4", "#7fcdbb", "#41b6c4", "#1d91c0", "#225ea8", "#253494", "#081d58"] },
+    { colors: ["#ea720e", "#ca5130", "#e9c25a", "#52534f", "#f9ecd3"], "name": "rag-bangalore" },
+    { "name": "GnBu", colors: ["#f7fcf0", "#e0f3db", "#ccebc5", "#a8ddb5", "#7bccc4", "#4eb3d3", "#2b8cbe", "#0868ac", "#084081"] },
+    { colors: ["#8e0152", "#c51b7d", "#de77ae", "#f1b6da", "#fde0ef", "#f7f7f7", "#e6f5d0", "#b8e186", "#7fbc41", "#4d9221", "#276419"], "name": "piyg" },
+    { "name": "ducci_h", colors: ["#6b5c6e", "#4a2839", "#d9574a", "#ffc34b", "#d9574a"] },
+    { "name": "rdylbu", colors: ["#a50026", "#d73027", "#f46d43", "#fdae61", "#fee090", "#ffffbf", "#e0f3f8", "#abd9e9", "#74add1", "#4575b4", "#313695"] },
+    { "name": "kaffeprat", colors: ["#BCAA8C", "#D8CDBE", "#484A42", "#746B58", "#9A8C73", "#fff", "#000"] },
+    { colors: ["#302956", "#f3c507", "#eee3d3", "#302956"], "name": "dt02" },
+    { colors: ["#fff7f3", "#fde0dd", "#fcc5c0", "#fa9fb5", "#f768a1", "#dd3497", "#ae017e", "#7a0177", "#49006a"], "name": "RdPu" },
+    { "name": "spatial03", colors: ["#4169ff", "#f6f6f4", "#f6f6f4", "#f6f6f4", "#4169ff"] },
+    { colors: ["#000000", "#0E402D", "#295135", "#5A6650", "#9FCC2E"], "name": "green_machine" },
+    { "name": "system.#05", colors: ["#db4549", "#d1e1e1", "#3e6a90", "#2e3853", "#a3c9d3", "#fff", "#000"] },
+    { "name": "blues", colors: ["#f7fbff", "#deebf7", "#c6dbef", "#9ecae1", "#6baed6", "#4292c6", "#2171b5", "#08519c", "#08306b"] },
+    { colors: ["#1b9e77", "#d95f02", "#7570b3", "#e7298a", "#66a61e", "#e6ab02", "#a6761d", "#666666"], "name": "Dark2" },
+    { "name": "ylorbr", colors: ["#ffffe5", "#fff7bc", "#fee391", "#fec44f", "#fe9929", "#ec7014", "#cc4c02", "#993404", "#662506"] },
+    { colors: ["#a87c2a", "#bdc9b1", "#f14616", "#ecbfaf", "#017724", "#0e2733", "#2b9ae9", "#dfd4c1", "#292319"], "name": "kov_06" },
+    { "name": "dale_night", colors: ["#ae5d9d", "#f1e8bc", "#ef8fa3", "#f7c047", "#58c9ed", "#f77150", "#00ae83", "#000000"] },
+    { "name": "cc242", colors: ["#bbd444", "#fcd744", "#fa7b53", "#423c6f", "#faf4e4"] },
+    { "name": "Set2", colors: ["#66c2a5", "#fc8d62", "#8da0cb", "#e78ac3", "#a6d854", "#ffd92f", "#e5c494", "#b3b3b3"] },
+    { colors: ["#df456c", "#ea6a82", "#270b32", "#471e43", "#ef9198", "#270b32"], "name": "jrmy" },
+    { colors: ["#7f3b08", "#b35806", "#e08214", "#fdb863", "#fee0b6", "#f7f7f7", "#d8daeb", "#b2abd2", "#8073ac", "#542788", "#2d004b"], "name": "PuOr" },
+    { colors: ["#c47c2b", "#5f5726", "#000000", "#7e8a84", "#ecddc5", "#7e8a84"], "name": "ducci_j" },
+    { colors: ["#f73f4a", "#d3e5eb", "#002c3e", "#1aa1b1", "#ec6675", "#fff", "#110b09"], "name": "system.#03" },
+    { colors: ["#f6f6f4", "#4169ff", "#4169ff", "#4169ff", "#f6f6f4"], "name": "spatial03i" },
+    { colors: ["#fcfbfd", "#efedf5", "#dadaeb", "#bcbddc", "#9e9ac8", "#807dba", "#6a51a3", "#54278f", "#3f007d"], "name": "purples" },
+    { "name": "greys", colors: ["#ffffff", "#f0f0f0", "#d9d9d9", "#bdbdbd", "#969696", "#737373", "#525252", "#252525", "#000000"] },
+    { colors: ["#ffffff", "#f0f0f0", "#d9d9d9", "#bdbdbd", "#969696", "#737373", "#525252", "#252525", "#000000"], "name": "Greys" },
+    { colors: ["#d24c23", "#7ba6bc", "#f0c667", "#ede2b3", "#672b35", "#142a36", "#108266", "#132a37"], "name": "kov_01" }
+]
+    .map((cp) => ({
+    id: Object(_helpers__WEBPACK_IMPORTED_MODULE_0__["makeid"])(),
+    name: cp.name,
+    colors: [...cp.colors],
+}));
+
+
+/***/ }),
+
+/***/ "./src/app/shared/helpers.ts":
+/*!***********************************!*\
+  !*** ./src/app/shared/helpers.ts ***!
+  \***********************************/
+/*! exports provided: makeid */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "makeid", function() { return makeid; });
+function makeid(length = 8) {
+    var result = '';
+    var characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+    var charactersLength = characters.length;
+    for (var i = 0; i < length; i++) {
+        result += characters.charAt(Math.floor(Math.random() * charactersLength));
+    }
+    return result;
+}
+
+
+/***/ }),
+
+/***/ "./src/app/shared/ringdata.service.ts":
+/*!********************************************!*\
+  !*** ./src/app/shared/ringdata.service.ts ***!
+  \********************************************/
+/*! exports provided: RingDataService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RingDataService", function() { return RingDataService; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
+
+
+class RingDataService {
+    constructor() { }
+    generateRingRow() {
+        const ringCount = 12;
+        return new Array(ringCount).fill(null).map((_, i) => {
+            console.log(i / ringCount + 1 / (2 * ringCount));
+            return {
+                x: i / ringCount + 1 / (2 * ringCount),
+                y: 0.5,
+                innerRadius: .2,
+                outerRadius: .25,
+            };
+        });
+    }
+}
+RingDataService.ɵfac = function RingDataService_Factory(t) { return new (t || RingDataService)(); };
+RingDataService.ɵprov = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjectable"]({ token: RingDataService, factory: RingDataService.ɵfac, providedIn: 'root' });
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](RingDataService, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"],
+        args: [{
+                providedIn: 'root'
+            }]
+    }], function () { return []; }, null); })();
+
+
+/***/ }),
+
+/***/ "./src/environments/environment.ts":
+/*!*****************************************!*\
+  !*** ./src/environments/environment.ts ***!
+  \*****************************************/
+/*! exports provided: environment */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "environment", function() { return environment; });
+// This file can be replaced during build by using the `fileReplacements` array.
+// `ng build --prod` replaces `environment.ts` with `environment.prod.ts`.
+// The list of file replacements can be found in `angular.json`.
+const environment = {
+    production: false
+};
+/*
+ * For easier debugging in development mode, you can import the following file
+ * to ignore zone related error stack frames such as `zone.run`, `zoneDelegate.invokeTask`.
+ *
+ * This import should be commented out in production mode because it will have a negative impact
+ * on performance if an error is thrown.
+ */
+// import 'zone.js/dist/zone-error';  // Included with Angular CLI.
+
+
+/***/ }),
+
+/***/ "./src/main.ts":
+/*!*********************!*\
+  !*** ./src/main.ts ***!
+  \*********************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
+/* harmony import */ var _environments_environment__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./environments/environment */ "./src/environments/environment.ts");
+/* harmony import */ var _app_app_module__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./app/app.module */ "./src/app/app.module.ts");
+/* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/platform-browser */ "./node_modules/@angular/platform-browser/__ivy_ngcc__/fesm2015/platform-browser.js");
+
+
+
+
+if (_environments_environment__WEBPACK_IMPORTED_MODULE_1__["environment"].production) {
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["enableProdMode"])();
+}
+_angular_platform_browser__WEBPACK_IMPORTED_MODULE_3__["platformBrowser"]().bootstrapModule(_app_app_module__WEBPACK_IMPORTED_MODULE_2__["AppModule"])
+    .catch(err => console.error(err));
+
+
+/***/ }),
+
+/***/ 0:
+/*!**********************************************************************************************************!*\
+  !*** multi (webpack)-dev-server/client?http://0.0.0.0:0/sockjs-node&sockPath=/sockjs-node ./src/main.ts ***!
+  \**********************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+__webpack_require__(/*! C:\Files\Programming\art\visualizer\node_modules\webpack-dev-server\client\index.js?http://0.0.0.0:0/sockjs-node&sockPath=/sockjs-node */"./node_modules/webpack-dev-server/client/index.js?http://0.0.0.0:0/sockjs-node&sockPath=/sockjs-node");
+module.exports = __webpack_require__(/*! C:\Files\Programming\art\visualizer\src\main.ts */"./src/main.ts");
+
+
+/***/ })
+
+},[[0,"runtime","vendor"]]]);
+//# sourceMappingURL=main.js.map
