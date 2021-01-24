@@ -3,7 +3,11 @@ import { Dims } from 'src/app/models';
 import textures from 'textures';
 import * as d3 from 'd3';
 import { head, last } from 'lodash';
-import { RingDataService } from 'src/app/shared/ringdata.service';
+import { FunctionType, RingDataService } from 'src/app/shared/ringdata.service';
+import { saveSvgAsPng } from 'save-svg-as-png';
+import { makeid } from 'src/app/shared/helpers';
+import { Ring } from 'src/app/shared/models';
+
 
 @Component({
   selector: 'app-rings',
@@ -13,38 +17,17 @@ import { RingDataService } from 'src/app/shared/ringdata.service';
 export class RingsComponent implements OnInit {
   
   public svg: any;
-  public stopPointGroup;
-  public slashGroup;
   public xScale: any;
   public yScale: any;
   public rScale: any;
-  public lineGenerator: any;
 
   public color = {
     background: 'white',
   }
 
   public canvas: Dims ={
-    width: 1600,
-    height: 800,
-  }
-
-  public data: any = [
-    {x:0.55,y:0.5,ir:0.1,or:0.2,t:'lines-thin'},
-    {x:0.45,y:0.5,ir:0.25,or:0.3,t:'lines-thick'},
-    {x:0.5,y:0.5,ir:0.35,or:0.45,t:'lines-thick'},
-    {x:1,y:1,ir:0.5,or:0.53,t:'lines-thick'},
-    // {x:0.5,y:0.5,ir:0.35,or:1,t:'lines-thin'},
-  ]
-
-  public textures = {
-    lines:{
-      thin: textures.lines().lighter(),
-      thick: textures.lines().heavier(),
-    },
-    sequence:new Array(this.data.length).fill(null).map((_,i)=>
-      textures.circles().radius((i+1)*3)//.thicker((i+1)/2).radius(7)
-    )
+    width: 2400,
+    height: 1200,
   }
 
   constructor(
@@ -54,27 +37,63 @@ export class RingsComponent implements OnInit {
   ngOnInit(): void {
     this.setup();
 
-    let rings = this.ringDataService.generateRingRow()
+    let staticRowParams = {
+      ringCount:12,
+      xStart: 0,
+      yStart:0.25,
+      rStart: 1/12,
+      swStart: 1/12,
+      curve:{
+        magnitude: 0.25,
+        frequency: 1,
+        offset: 0,
+      },
+      texture:{
+        groups: 1,
+      }
+    }
+    let dynamicRowParams = {
+      rChange: 0,
+      swChange: 0,
+    }
+    let ringRow: Ring[] = this.ringDataService.generateRingRow(
+      staticRowParams,
+      dynamicRowParams,
+    )
+    let r = this.svg.append('g');
+    this.drawRingRow(ringRow,r);
 
-    this.update(rings);
+    staticRowParams = {
+      ...staticRowParams,
+      xStart:0.25,
+      yStart:0.75,
+    }
+    dynamicRowParams = {
+      ...dynamicRowParams,
+      rChange: 0.75
+    }
+    ringRow = this.ringDataService.generateRingRow(
+      staticRowParams,
+      dynamicRowParams,
+    )
+    r = this.svg.append('g');
+    this.drawRingRow(ringRow,r);
+
   }
 
-  public update(data){
-    const rings = this.svg.selectAll('circles')
-      .data(data)
+  public drawRingRow(ringRow: Ring[],container){
+    const rings = container.selectAll('circles')
+      .data(ringRow)
     rings.enter()
       .append('circle')
-      .attr('r',d=>this.xScale(d.radius))
-      .style("stroke-width",d=>this.xScale(d.strokeWidth))
-      // .attr('r',d=>this.xScale((d.outerRadius - d.innerRadius)/2 + d.innerRadius))
-      // .style("stroke-width",d=>this.xScale(d.outerRadius - d.innerRadius))
       .attr('cx',d=>this.xScale(d.x))
       .attr('cy',d=>this.yScale(d.y))
+      .attr('r',d=>this.rScale(d.radius))
+      .style("stroke-width",d=>this.rScale(d.strokeWidth))
 	    .style("fill", 'none')
 	    .style("stroke", (d,i) => {
-        // const params = d.t.split('-')
-        // return this.textures[head(params)][last(params)].url()
-        return this.textures.sequence[i%this.textures.sequence.length].url()
+        this.svg.call(d.textureFunction);
+        return d.textureFunction.url();
       });
   }
 
@@ -87,9 +106,14 @@ export class RingsComponent implements OnInit {
     this.xScale = d3.scaleLinear().domain([0,1]).range([0,this.canvas.width]);
     this.yScale = d3.scaleLinear().domain([0,1]).range([0,this.canvas.height]);
     this.rScale = d3.scaleLinear().domain([0,1]).range([0,this.canvas.height]);
-    this.svg.call(this.textures.lines.thin);
-    this.svg.call(this.textures.lines.thick);
-    this.textures.sequence.forEach((t)=>this.svg.call(t));
+  }
+
+  public saveSvg(){
+    let svg = document.getElementsByTagName("svg")[0];
+    console.log('svg',svg)
+    let id = `${makeid()}.png`;
+    let params = {scale: 1, backgroundColor: "#FFFFFF"};
+    saveSvgAsPng(svg,id,params);
   }
 
 }
