@@ -1,12 +1,11 @@
 import { Component, OnInit } from '@angular/core';
-import { Dims } from 'src/app/models';
-import textures from 'textures';
 import * as d3 from 'd3';
-import { head, last } from 'lodash';
-import { FunctionType, RingDataService } from 'src/app/shared/ringdata.service';
 import { saveSvgAsPng } from 'save-svg-as-png';
+import { Dims } from 'src/app/models';
 import { makeid } from 'src/app/shared/helpers';
 import { Ring } from 'src/app/shared/models';
+import { RingParamService } from 'src/app/shared/ring-param.service';
+import { RingDataService } from 'src/app/shared/ringdata.service';
 
 
 @Component({
@@ -22,7 +21,7 @@ export class RingsComponent implements OnInit {
   public rScale: any;
 
   public color = {
-    background: 'white',
+    background: 'black',
   }
 
   public canvas: Dims ={
@@ -31,53 +30,44 @@ export class RingsComponent implements OnInit {
   }
 
   constructor(
-    private ringDataService: RingDataService
+    private ringDataService: RingDataService,
+    private ringParamService: RingParamService,
   ) { }
 
   ngOnInit(): void {
     this.setup();
 
-    let staticRowParams = {
-      ringCount:12,
-      xStart: 0,
-      yStart:0.25,
-      rStart: 1/12,
-      swStart: 1/12,
-      curve:{
-        magnitude: 0.25,
-        frequency: 1,
-        offset: 0,
+    let rowInputs = [
+      {
+        row: {yStart:0},
+        dynamic: {rChange:0.1},
       },
-      texture:{
-        groups: 1,
-      }
-    }
-    let dynamicRowParams = {
-      rChange: 0,
-      swChange: 0,
-    }
-    let ringRow: Ring[] = this.ringDataService.generateRingRow(
-      staticRowParams,
-      dynamicRowParams,
-    )
-    let r = this.svg.append('g');
-    this.drawRingRow(ringRow,r);
+      {
+        row: {yStart:0.25},
+        texture: {reverse:false},
+        dynamic: {swChange:0.3},
+      },
+      {
+        row: {yStart:0.5},
+        dynamic: {rChange:0.2},
+      },
+      {
+        row: {yStart:0.75},
+        texture: {reverse:false},
+        dynamic: {swChange:0.3},
+      },
+      {
+        row: {yStart:1},
+        dynamic: {rChange:0.1},
+      },
+    ]
 
-    staticRowParams = {
-      ...staticRowParams,
-      xStart:0.25,
-      yStart:0.75,
-    }
-    dynamicRowParams = {
-      ...dynamicRowParams,
-      rChange: 0.75
-    }
-    ringRow = this.ringDataService.generateRingRow(
-      staticRowParams,
-      dynamicRowParams,
-    )
-    r = this.svg.append('g');
-    this.drawRingRow(ringRow,r);
+    let rowParams = this.ringParamService.generateParams(rowInputs);
+    rowParams.forEach((params)=>{
+      let ringRow: Ring[] = this.ringDataService.generateRingRow(params);
+      let r = this.svg.append('g');
+      this.drawRingRow(ringRow,r);
+    })
 
   }
 
@@ -90,7 +80,7 @@ export class RingsComponent implements OnInit {
       .attr('cy',d=>this.yScale(d.y))
       .attr('r',d=>this.rScale(d.radius))
       .style("stroke-width",d=>this.rScale(d.strokeWidth))
-	    .style("fill", 'none')
+	    .style("fill", d=>d.fillColor)
 	    .style("stroke", (d,i) => {
         this.svg.call(d.textureFunction);
         return d.textureFunction.url();

@@ -1,24 +1,26 @@
 import { Injectable } from '@angular/core';
 import textures from 'textures';
-import { Ring, Texture, TextureFunction } from './models';
+import { Ring, TextureFunction } from './models';
 import * as d3 from 'd3';
+import * as chroma from 'chroma.ts';
+import { colorPalettes } from './colors';
 
 @Injectable({
   providedIn: 'root'
 })
 export class RingDataService {
-
+  
+  private colors: string[] = colorPalettes.find(p=>p.name === 'Spectral')?.colors;
+  private colorMachine = chroma.scale(this.colors);
   constructor() { }
 
-  public generateRingRow(staticParams, dynamicParams): Ring[]{
-
+  public generateRingRow({row,curve,texture,dynamic}): Ring[]{
     const xOffset = (i:number) => {
-      return i / (staticParams.ringCount - 1)
+      return i / (row.ringCount - 1)
     }
 
     const yOffset = (i:number) => {
-      const curve = staticParams.curve;
-      const step = 2 * Math.PI * (1 / (staticParams.ringCount - 1))
+      const step = 2 * Math.PI * (1 / (row.ringCount - 1))
       const offset = (curve.offset / curve.frequency);
       let angle = i * step + offset;
       return curve.magnitude * 0.5 * Math.sin(angle * curve.frequency);
@@ -28,39 +30,45 @@ export class RingDataService {
       const rMax = 0.5;
       const scaler = d3.scaleLinear()
         .domain([0,1])
-        .range([staticParams.rStart,rMax])
-      const step = scaler(dynamicParams.rChange) - staticParams.rStart
-      return i * step / staticParams.ringCount;
+        .range([row.rStart,rMax]);
+      const step = scaler(dynamic.rChange) - row.rStart;
+      return i * step / row.ringCount;
     }
 
     const swOffset = (i:number) => {
       const swMax = 0.2;
       const scaler = d3.scaleLinear()
         .domain([0,1])
-        .range([staticParams.swStart,swMax]);
-      const step = (scaler(dynamicParams.swChange) - staticParams.swStart);
-      return i * step / staticParams.ringCount;
+        .range([row.swStart,swMax]);
+      const step = (scaler(dynamic.swChange) - row.swStart);
+      return i * step / row.ringCount;
     }
 
-    const textureFunction = (i:number, compliment = true) => {
-      const groupSize = Math.floor(staticParams.ringCount / staticParams.texture.groups)
+    const textureFunction = (i:number, compliment = true): TextureFunction => {
+      const groupSize = Math.floor(row.ringCount / texture.groups)
       const minWeight = 0.8;
       const maxWeight = compliment ? 2.4 : 4;
       const scaleWeight = d3.scaleLinear()
-        .domain([0,groupSize])
-        .range([minWeight,maxWeight])
+        .domain(texture.reverse ? [groupSize,0] : [0,groupSize])
+        .range([minWeight,maxWeight]);
       const t = textures.circles()
         .heavier(scaleWeight(i % groupSize))
+        .fill(this.colorMachine((i % row.ringCount) / row.ringCount).hex())
       return compliment ? t.complement() : t;
     }
 
-    return new Array(staticParams.ringCount).fill(null).map((_,i)=>{
+    const fillColor = (i:number) => {
+      return 'none';//this.colorMachine((i % row.ringCount) / row.ringCount).hex()
+    }
+
+    return new Array(row.ringCount).fill(null).map((_,i) => {
       return {
-        x: staticParams.xStart + xOffset(i),
-        y: staticParams.yStart + yOffset(i),
-        radius: staticParams.rStart + rOffset(i),
-        strokeWidth: staticParams.swStart + swOffset(i),
+        x: row.xStart + xOffset(i),
+        y: row.yStart + yOffset(i),
+        radius: row.rStart + rOffset(i),
+        strokeWidth: row.swStart + swOffset(i),
         textureFunction: textureFunction(i),
+        fillColor: fillColor(i),
       }
     })
   }
